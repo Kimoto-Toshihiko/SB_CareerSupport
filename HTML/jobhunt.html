@@ -8,22 +8,261 @@
         <h1>就職活動等</h1>
         <form>
             業種　
-            <input type="text" name="industry" size="60"><br>
+            <select id="industry" name="industry">
+                <option value="it-Web">IT・Web関連</option>
+                <option value="accounting">会計・法律関連</option>
+                <option value="trading">商社関連</option>
+                <option value="manufacturer">メーカー関連</option>
+                <option value="logistics">物流関連</option>
+                <option value="retail">小売・卸売関連</option>
+                <option value="food">食品関連</option>
+                <option value="service">サービス関連</option>
+                <option value="leisure">レジャー・アミューズメント関連</option>
+                <option value="hotel">ホテル関連</option>
+                <option value="nursing">介護・福祉・医療・教育関連</option>
+                <option value="mass-communication">マスコミ関連</option>
+                <option value="logistics">人材関連</option>
+                <option value="real-estate">不動産・建設関連</option>
+                <option value="apparel">アパレル・コスメ関連</option>
+                <option value="finance">金融関連</option>
+                <option value="public-sector">公的機関関連</option>
+                <option value="etc">その他</option>
+            </select><br>
             　理由
             <input type="text" name="industry-reason" size="60"><br><br>
             職種　
-            <input type="text" name="job-category" size="60"><br>
+            <select id="job" name="job">
+                <option value="admin">オフィスワーク・事務</option>
+                <option value="business">営業・販売・サービス</option>
+                <option value="it-engineer">IT・エンジニア</option>
+                <option value="creative">クリエイティブ</option>
+                <option value="nursing">介護・福祉・医療・教育</option>
+                <option value="manufacturer">製造・物流・軽作業</option>
+                <option value="specialist">専門職</option>
+                <option value="etc">その他</option>
+            </select><br>
             　詳細
-            <input type="text" name="job-detail" size="60"><br>
+            <select id="job-detail" name="job-detail">
+                <option value="admin-general">一般事務</option>
+                <option value="admin-business">営業事務</option>
+                <option value="admin-trading">貿易事務</option>
+                <option value="admin-english">英文事務</option>
+                <option value="admin-finance">金融事務</option>
+                <option value="admin-accounting">経理事務</option>
+                <option value="admin-medical">医療事務・受付</option>
+                <option value="admin-legal">法務・特許事務</option>
+                <option value="admin-school">学校事務</option>
+                <option value="admin-datainput">データ入力</option>
+                <option value="admin-socalinsurance">社会保険事務</option>
+                <option value="admin-realestate">不動産事務</option>
+                <option value="accounting">経理・財務・会計</option>
+                <option value="general-affairs">総務・人事・法務</option>
+                <option value="secretary">秘書</option>
+                <option value="reception">受付</option>
+                <option value="translate">翻訳・通訳</option>
+                <option value="admin-nursing">介護事務</option>
+                <option value="admin-etc">その他（オフィスワーク・事務）</option>
+                <option value="business">営業</option>
+                <option value="business-route">営業（ルート）</option>
+                <option value="callcenter-receive">コールセンター（受信）</option>
+                <option value="callcenter-send">コールセンター（発信）</option>
+                <option value="sales-homeappliance">接客販売（家電・携帯）</option>
+                <option value="sales-eatdrink">接客販売（飲食）</option>
+                <option value="sales-apparel">接客販売（アパレル・コスメ）</option>
+                <option value="aesthetician">エステティシャン</option>
+                <option value="sales-etc">その他（営業・販売・サービス）</option>
+                <option value="system-engineer">SE</option>
+                <option value="cad-operator-manufacturer">CADオペレータ（機械）</option>
+                <option value="cad-operator-architecture">CADオペレータ（建築）</option>
+                <option value="programmer">プログラマー</option>
+                <option value="helpdesk">ヘルプデスク・ユーザーサポート</option>
+                <option value="it-engineer-etc">その他（IT・エンジニア）</option>
+                <option value="web-designer">Webデザイナー</option>
+                <option value="dtp-operator">DTPオペレータ</option>
+                <option value="creative-etc">その他（クリエイティブ）</option>
+                <option value="nurse">看護師</option>
+                <option value="helper">ヘルパー・介護士</option>
+                <option value="nursery-teacher">保育士</option>
+                <option value="nutritionist">栄養士</option>
+                <option value="instructor">講師・インストラクター</option>
+                <option value="manufacturer-etc">その他（製造・物流・軽作業）</option>
+                <option value="research">研究</option>
+                <option value="development">開発</option>
+                <option value="manufacturer">実験</option>
+                <option value="experiment">その他（専門職）</option>
+                <option value="etc">その他</option>
+            </select><br>
             　理由
             <input type="text" name="job-reason" size="60"><br><br>
             雇用形態<br>
             　第一希望
-            <input type="text" name="employ-status1" size="60"><br>
+            <select id="employ-status1" name="employ-status1">
+                <option value="regular-employee">正社員</option>
+                <option value="part-time">パート・アルバイト</option>
+                <option value="trading">派遣社員</option>
+                <option value="temporary-employee">契約社員</option>
+                <option value="seasonal-worker">臨時・季節</option>
+                <option value="self-employed">自営業</option>
+                <option value="outsourcing">業務委託</option>
+                <option value="appointment-dispatch">紹介予定派遣</option>
+                <option value="etc">その他</option>
+            </select><br>
             　第二希望
-            <input type="text" name="employ-status2" size="60"><br>
+            <select id="employ-status2" name="employ-status2">
+                <option value="regular-employee">正社員</option>
+                <option value="part-time">パート・アルバイト</option>
+                <option value="trading">派遣社員</option>
+                <option value="temporary-employee">契約社員</option>
+                <option value="seasonal-worker">臨時・季節</option>
+                <option value="self-employed">自営業</option>
+                <option value="outsourcing">業務委託</option>
+                <option value="appointment-dispatch">紹介予定派遣</option>
+                <option value="etc">その他</option>
+            </select><br>
             　第三希望
-            <input type="text" name="employ-status3" size="60"><br><br>
+            <select id="employ-status3" name="employ-status3">
+                <option value="regular-employee">正社員</option>
+                <option value="part-time">パート・アルバイト</option>
+                <option value="trading">派遣社員</option>
+                <option value="temporary-employee">契約社員</option>
+                <option value="seasonal-worker">臨時・季節</option>
+                <option value="self-employed">自営業</option>
+                <option value="outsourcing">業務委託</option>
+                <option value="appointment-dispatch">紹介予定派遣</option>
+                <option value="etc">その他</option>
+            </select><br><br>
+            月給
+            <input type="number" name="salary" size="5">
+            万円以上を希望<br><br>
+            勤務地
+            <label class="radiobutton">
+                <input type="radio" name="location" value="osaka-city" />
+                大阪市内
+                <input type="radio" name="location" value="osaka-prefecture" />
+                大阪府内
+                詳細
+                <input type="text" name="location" size="30"><br>
+                　　　
+                <input type="radio" name="location" value="etc-prefecture" />
+                他府県
+                詳細
+                <input type="text" name="location" size="30"><br>
+            </label>
+            　沿線・駅名
+            <input type="text" name="along-station" size="60"><br>
+            　通勤時間　
+            <input type="time" name="commuting-time">
+            以内<br><br>
+            勤務時間
+            <input type="time" name="working-start">
+            ～
+            <input type="time" name="working-end"><br><br>
+            休日
+            <label class="checkbox">
+                <input type="checkbox" name="holiday" value="monday" />
+                月
+                <input type="checkbox" name="holiday" value="tuesday" />
+                火
+                <input type="checkbox" name="holiday" value="wednesday" />
+                水
+                <input type="checkbox" name="holiday" value="thursday" />
+                木
+                <input type="checkbox" name="holiday" value="friday" />
+                金
+                <input type="checkbox" name="holiday" value="saturday" />
+                土
+                <input type="checkbox" name="holiday" value="sunday" />
+                日
+                <input type="checkbox" name="holiday" value="holiday" />
+                祝
+                <input type="checkbox" name="holiday" value="etc" />
+                その他
+                詳細
+                <input type="text" name="holiday" size="30"><br>
+            </label><br>
+            子どもの配慮
+            <label class="radiobutton">
+                <input type="radio" name="child-consideration" value="no" />
+                不要
+                <input type="radio" name="child-consideration" value="yes" />
+                必要
+                年齢
+                <input type="text" name="child-consideration" size="30"><br>
+            </label><br>
+            働き方
+            <label class="radiobutton">
+                <input type="radio" name="work-style" value="full-time" />
+                フルタイム
+                <input type="radio" name="work-style" value="within-dependents" />
+                扶養範囲内
+                <input type="radio" name="work-style" value="etc" />
+                その他
+                詳細
+                <input type="text" name="work-style" size="30"><br>
+            </label><br>
+            その他希望
+            <input type="text" name="hope-etc" size="60"><br><br>
+            上記10項目の優先順位<br>
+            　第一位
+            <select id="priority1" name="priority1">
+                <option value="industry">業種</option>
+                <option value="job">職種</option>
+                <option value="employ-status">雇用形態</option>
+                <option value="salary">月給</option>
+                <option value="location">勤務地</option>
+                <option value="working-time">勤務時間</option>
+                <option value="holiday">休日</option>
+                <option value="child-consideration">子どもの配慮</option>
+                <option value="work-style">働き方</option>
+                <option value="hope-etc">その他希望</option>
+            </select><br>
+            　第二位
+            <select id="priority2" name="priority2">
+                <option value="industry">業種</option>
+                <option value="job">職種</option>
+                <option value="employ-status">雇用形態</option>
+                <option value="salary">月給</option>
+                <option value="location">勤務地</option>
+                <option value="working-time">勤務時間</option>
+                <option value="holiday">休日</option>
+                <option value="child-consideration">子どもの配慮</option>
+                <option value="work-style">働き方</option>
+                <option value="hope-etc">その他希望</option>
+            </select><br>
+            　第三位
+            <select id="priority3" name="priority3">
+                <option value="industry">業種</option>
+                <option value="job">職種</option>
+                <option value="employ-status">雇用形態</option>
+                <option value="salary">月給</option>
+                <option value="location">勤務地</option>
+                <option value="working-time">勤務時間</option>
+                <option value="holiday">休日</option>
+                <option value="child-consideration">子どもの配慮</option>
+                <option value="work-style">働き方</option>
+                <option value="hope-etc">その他希望</option>
+            </select><br><br>
+            就職時期
+            <label class="radiobutton">
+                <input type="radio" name="employment-period" value="as-soon-as" />
+                出来るだけ早く
+                <input type="radio" name="employment-period" value="during-training" />
+                訓練期間3ヶ月以内
+                <input type="radio" name="employment-period" value="after-training" />
+                訓練修了後3ヶ月以内
+            </label><br>
+            　就業開始予定
+                <input type="month" name="employment-period" ><br><br>
+            就職活動状況<br>
+            　応募書類（職務経歴書）
+            <label class="radiobutton">
+                <input type="radio" name="cv" value="completed" />
+                完成済
+                <input type="radio" name="cv" value="in-progress" />
+                作成中
+                <input type="radio" name="cv" value="not-created" />
+                未作成
+            </label><br>
             <input type="submit" value="保存">
         </form>
     </body>
