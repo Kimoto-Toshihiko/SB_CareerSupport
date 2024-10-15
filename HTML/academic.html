@@ -15,10 +15,12 @@
             　学科名　　
             <input type="text" name="subject-name" size="60"><br>
             　卒業の別　
-            <select id="graduation-type" name="graduation-type">
-                <option value="dropout">中退</option>
-                <option value="graduation">卒業</option>
-            </select><br><br>
+            <label class="radiobutton">
+                <input type="radio" name="graduation-type" value="dropout" />
+                中退
+                <input type="radio" name="graduation-type" value="graduation" />
+                卒業
+            </label><br><br>
             パソコンスキル<br>
             　【Office系】<br>
             　　　Word
@@ -51,7 +53,7 @@
                 アニメーション
                 <input type="checkbox" name="ppoint" value="presen" />
                 プレゼン
-            </label><br>
+            </label><br><br>
             　【ビジネス系】<br>
             　　　Illustrator
             <label class="radiobutton">
@@ -187,7 +189,7 @@
             取得時期
             <input type="month" name="yotei3-shikaku" value="month" /><br><br>
             趣味・特技
-            <input type="text" name="hobby" size="60"><br>
+            <input type="text" name="hobby" size="60"><br><br>
             <input type="submit" value="保存">
         </form>
     </body>

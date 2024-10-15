@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>訓練生名簿</title>
+    </head>
+    <body>
+        <h1>職務経歴</h1>
+        <form>
+            期間
+            <input type="time" name="work-start1">
+            ～
+            <input type="time" name="work-end1"><br><br>
+            会社名
+            <input type="text" name="company-name1" size="60"><br><br>
+            業種　
+            <select id="industry1" name="industry1">
+                <option value="">選択してください</option>
+                <option value="it-Web">IT・Web関連</option>
+                <option value="accounting">会計・法律関連</option>
+                <option value="trading">商社関連</option>
+                <option value="manufacturer">メーカー関連</option>
+                <option value="logistics">物流関連</option>
+                <option value="retail">小売・卸売関連</option>
+                <option value="food">食品関連</option>
+                <option value="service">サービス関連</option>
+                <option value="leisure">レジャー・アミューズメント関連</option>
+                <option value="hotel">ホテル関連</option>
+                <option value="nursing">介護・福祉・医療・教育関連</option>
+                <option value="mass-communication">マスコミ関連</option>
+                <option value="logistics">人材関連</option>
+                <option value="real-estate">不動産・建設関連</option>
+                <option value="apparel">アパレル・コスメ関連</option>
+                <option value="finance">金融関連</option>
+                <option value="public-sector">公的機関関連</option>
+                <option value="etc">その他</option>
+            </select><br>
+            職種　区分
+            <select id="job1" name="job1">
+                <option value="">選択してください</option>
+                <option value="admin">オフィスワーク・事務</option>
+                <option value="business">営業・販売・サービス</option>
+                <option value="it-engineer">IT・エンジニア</option>
+                <option value="creative">クリエイティブ</option>
+                <option value="nursing">介護・福祉・医療・教育</option>
+                <option value="manufacturer">製造・物流・軽作業</option>
+                <option value="specialist">専門職</option>
+                <option value="etc">その他</option>
+            </select><br>
+            　詳細
+            <select id="job-detail1" name="job-detail1">
+                <option value="">選択してください</option>
+                <optgroup label="オフィスワーク・事務">
+                    <option value="admin-general">一般事務</option>
+                    <option value="admin-business">営業事務</option>
+                    <option value="admin-trading">貿易事務</option>
+                    <option value="admin-english">英文事務</option>
+                    <option value="admin-finance">金融事務</option>
+                    <option value="admin-accounting">経理事務</option>
+                    <option value="admin-medical">医療事務・受付</option>
+                    <option value="admin-legal">法務・特許事務</option>
+                    <option value="admin-school">学校事務</option>
+                    <option value="admin-datainput">データ入力</option>
+                    <option value="admin-socalinsurance">社会保険事務</option>
+                    <option value="admin-realestate">不動産事務</option>
+                    <option value="accounting">経理・財務・会計</option>
+                    <option value="general-affairs">総務・人事・法務</option>
+                    <option value="secretary">秘書</option>
+                    <option value="reception">受付</option>
+                    <option value="translate">翻訳・通訳</option>
+                    <option value="admin-nursing">介護事務</option>
+                    <option value="admin-etc">その他（オフィスワーク・事務）</option>
+                </optgroup>
+                <optgroup label="営業・販売・サービス">
+                    <option value="business">営業</option>
+                    <option value="business-route">営業（ルート）</option>
+                    <option value="callcenter-receive">コールセンター（受信）</option>
+                    <option value="callcenter-send">コールセンター（発信）</option>
+                    <option value="sales-homeappliance">接客販売（家電・携帯）</option>
+                    <option value="sales-eatdrink">接客販売（飲食）</option>
+                    <option value="sales-apparel">接客販売（アパレル・コスメ）</option>
+                    <option value="aesthetician">エステティシャン</option>
+                    <option value="sales-etc">その他（営業・販売・サービス）</option>
+                </optgroup>
+                <optgroup label="IT・エンジニア">
+                    <option value="system-engineer">SE</option>
+                    <option value="cad-operator-manufacturer">CADオペレータ（機械）</option>
+                    <option value="cad-operator-architecture">CADオペレータ（建築）</option>
+                    <option value="programmer">プログラマー</option>
+                    <option value="helpdesk">ヘルプデスク・ユーザーサポート</option>
+                    <option value="it-engineer-etc">その他（IT・エンジニア）</option>
+                </optgroup>
+                <optgroup label="クリエイティブ">
+                    <option value="web-designer">Webデザイナー</option>
+                    <option value="dtp-operator">DTPオペレータ</option>
+                    <option value="creative-etc">その他（クリエイティブ）</option>
+                </optgroup>
+                <optgroup label="介護・福祉・医療・教育">
+                    <option value="nurse">看護師</option>
+                    <option value="helper">ヘルパー・介護士</option>
+                    <option value="nursery-teacher">保育士</option>
+                    <option value="nutritionist">栄養士</option>
+                    <option value="instructor">講師・インストラクター</option>
+                    <option value="nursing-etc">その他（介護・福祉・医療・教育）</option>
+                </optgroup>
+                <optgroup label="製造・物流・軽作業">
+                    <option value="manufacturing">製造</option>
+                    <option value="logistics">物流</option>
+                    <option value="production-management">生産管理</option>
+                    <option value="light-work">軽作業・仕分け作業</option>
+                    <option value="driver">運転手・配達・配送</option>
+                    <option value="manufacturer-etc">その他（製造・物流・軽作業）</option>
+                </optgroup>
+                <optgroup label="専門職">
+                    <option value="research">研究</option>
+                    <option value="development">開発</option>
+                    <option value="manufacturer">実験</option>
+                    <option value="experiment">その他（専門職）</option>
+                </optgroup>
+                <optgroup label="その他">
+                    <option value="etc">その他</option>
+                </optgroup>
+            </select><br>
+            雇用形態
+            <select id="employ-status1" name="employ-status1">
+                <option value="">選択してください</option>
+                <option value="regular-employee">正社員</option>
+                <option value="part-time">パート・アルバイト</option>
+                <option value="trading">派遣社員</option>
+                <option value="temporary-employee">契約社員</option>
+                <option value="seasonal-worker">臨時・季節</option>
+                <option value="self-employed">自営業</option>
+                <option value="outsourcing">業務委託</option>
+                <option value="appointment-dispatch">紹介予定派遣</option>
+                <option value="etc">その他</option>
+            </select><br><br>
+            業務内容
+            <input type="text" name="work-detail1" size="60"><br><br>
+            ------------------------------------------------------------------------<br>
+            期間
+            <input type="time" name="work-start2">
+            ～
+            <input type="time" name="work-end2"><br><br>
+            会社名
+            <input type="text" name="company-name2" size="60"><br><br>
+            業種　
+            <select id="industry2" name="industry2">
+                <option value="">選択してください</option>
+                <option value="it-Web">IT・Web関連</option>
+                <option value="accounting">会計・法律関連</option>
+                <option value="trading">商社関連</option>
+                <option value="manufacturer">メーカー関連</option>
+                <option value="logistics">物流関連</option>
+                <option value="retail">小売・卸売関連</option>
+                <option value="food">食品関連</option>
+                <option value="service">サービス関連</option>
+                <option value="leisure">レジャー・アミューズメント関連</option>
+                <option value="hotel">ホテル関連</option>
+                <option value="nursing">介護・福祉・医療・教育関連</option>
+                <option value="mass-communication">マスコミ関連</option>
+                <option value="logistics">人材関連</option>
+                <option value="real-estate">不動産・建設関連</option>
+                <option value="apparel">アパレル・コスメ関連</option>
+                <option value="finance">金融関連</option>
+                <option value="public-sector">公的機関関連</option>
+                <option value="etc">その他</option>
+            </select><br>
+            職種　区分
+            <select id="job2" name="job2">
+                <option value="">選択してください</option>
+                <option value="admin">オフィスワーク・事務</option>
+                <option value="business">営業・販売・サービス</option>
+                <option value="it-engineer">IT・エンジニア</option>
+                <option value="creative">クリエイティブ</option>
+                <option value="nursing">介護・福祉・医療・教育</option>
+                <option value="manufacturer">製造・物流・軽作業</option>
+                <option value="specialist">専門職</option>
+                <option value="etc">その他</option>
+            </select><br>
+            　詳細
+            <select id="job-detail2" name="job-detail2">
+                <option value="">選択してください</option>
+                <optgroup label="オフィスワーク・事務">
+                    <option value="admin-general">一般事務</option>
+                    <option value="admin-business">営業事務</option>
+                    <option value="admin-trading">貿易事務</option>
+                    <option value="admin-english">英文事務</option>
+                    <option value="admin-finance">金融事務</option>
+                    <option value="admin-accounting">経理事務</option>
+                    <option value="admin-medical">医療事務・受付</option>
+                    <option value="admin-legal">法務・特許事務</option>
+                    <option value="admin-school">学校事務</option>
+                    <option value="admin-datainput">データ入力</option>
+                    <option value="admin-socalinsurance">社会保険事務</option>
+                    <option value="admin-realestate">不動産事務</option>
+                    <option value="accounting">経理・財務・会計</option>
+                    <option value="general-affairs">総務・人事・法務</option>
+                    <option value="secretary">秘書</option>
+                    <option value="reception">受付</option>
+                    <option value="translate">翻訳・通訳</option>
+                    <option value="admin-nursing">介護事務</option>
+                    <option value="admin-etc">その他（オフィスワーク・事務）</option>
+                </optgroup>
+                <optgroup label="営業・販売・サービス">
+                    <option value="business">営業</option>
+                    <option value="business-route">営業（ルート）</option>
+                    <option value="callcenter-receive">コールセンター（受信）</option>
+                    <option value="callcenter-send">コールセンター（発信）</option>
+                    <option value="sales-homeappliance">接客販売（家電・携帯）</option>
+                    <option value="sales-eatdrink">接客販売（飲食）</option>
+                    <option value="sales-apparel">接客販売（アパレル・コスメ）</option>
+                    <option value="aesthetician">エステティシャン</option>
+                    <option value="sales-etc">その他（営業・販売・サービス）</option>
+                </optgroup>
+                <optgroup label="IT・エンジニア">
+                    <option value="system-engineer">SE</option>
+                    <option value="cad-operator-manufacturer">CADオペレータ（機械）</option>
+                    <option value="cad-operator-architecture">CADオペレータ（建築）</option>
+                    <option value="programmer">プログラマー</option>
+                    <option value="helpdesk">ヘルプデスク・ユーザーサポート</option>
+                    <option value="it-engineer-etc">その他（IT・エンジニア）</option>
+                </optgroup>
+                <optgroup label="クリエイティブ">
+                    <option value="web-designer">Webデザイナー</option>
+                    <option value="dtp-operator">DTPオペレータ</option>
+                    <option value="creative-etc">その他（クリエイティブ）</option>
+                </optgroup>
+                <optgroup label="介護・福祉・医療・教育">
+                    <option value="nurse">看護師</option>
+                    <option value="helper">ヘルパー・介護士</option>
+                    <option value="nursery-teacher">保育士</option>
+                    <option value="nutritionist">栄養士</option>
+                    <option value="instructor">講師・インストラクター</option>
+                    <option value="nursing-etc">その他（介護・福祉・医療・教育）</option>
+                </optgroup>
+                <optgroup label="製造・物流・軽作業">
+                    <option value="manufacturing">製造</option>
+                    <option value="logistics">物流</option>
+                    <option value="production-management">生産管理</option>
+                    <option value="light-work">軽作業・仕分け作業</option>
+                    <option value="driver">運転手・配達・配送</option>
+                    <option value="manufacturer-etc">その他（製造・物流・軽作業）</option>
+                </optgroup>
+                <optgroup label="専門職">
+                    <option value="research">研究</option>
+                    <option value="development">開発</option>
+                    <option value="manufacturer">実験</option>
+                    <option value="experiment">その他（専門職）</option>
+                </optgroup>
+                <optgroup label="その他">
+                    <option value="etc">その他</option>
+                </optgroup>
+            </select><br>
+            雇用形態
+            <select id="employ-status2" name="employ-status2">
+                <option value="">選択してください</option>
+                <option value="regular-employee">正社員</option>
+                <option value="part-time">パート・アルバイト</option>
+                <option value="trading">派遣社員</option>
+                <option value="temporary-employee">契約社員</option>
+                <option value="seasonal-worker">臨時・季節</option>
+                <option value="self-employed">自営業</option>
+                <option value="outsourcing">業務委託</option>
+                <option value="appointment-dispatch">紹介予定派遣</option>
+                <option value="etc">その他</option>
+            </select><br><br>
+            業務内容
+            <input type="text" name="work-detail2" size="60"><br><br>
+            ------------------------------------------------------------------------<br>
+            期間
+            <input type="time" name="work-start3">
+            ～
+            <input type="time" name="work-end3"><br><br>
+            会社名
+            <input type="text" name="company-name3" size="60"><br><br>
+            業種　
+            <select id="industry3" name="industry3">
+                <option value="">選択してください</option>
+                <option value="it-Web">IT・Web関連</option>
+                <option value="accounting">会計・法律関連</option>
+                <option value="trading">商社関連</option>
+                <option value="manufacturer">メーカー関連</option>
+                <option value="logistics">物流関連</option>
+                <option value="retail">小売・卸売関連</option>
+                <option value="food">食品関連</option>
+                <option value="service">サービス関連</option>
+                <option value="leisure">レジャー・アミューズメント関連</option>
+                <option value="hotel">ホテル関連</option>
+                <option value="nursing">介護・福祉・医療・教育関連</option>
+                <option value="mass-communication">マスコミ関連</option>
+                <option value="logistics">人材関連</option>
+                <option value="real-estate">不動産・建設関連</option>
+                <option value="apparel">アパレル・コスメ関連</option>
+                <option value="finance">金融関連</option>
+                <option value="public-sector">公的機関関連</option>
+                <option value="etc">その他</option>
+            </select><br>
+            職種　区分
+            <select id="job3" name="job3">
+                <option value="">選択してください</option>
+                <option value="admin">オフィスワーク・事務</option>
+                <option value="business">営業・販売・サービス</option>
+                <option value="it-engineer">IT・エンジニア</option>
+                <option value="creative">クリエイティブ</option>
+                <option value="nursing">介護・福祉・医療・教育</option>
+                <option value="manufacturer">製造・物流・軽作業</option>
+                <option value="specialist">専門職</option>
+                <option value="etc">その他</option>
+            </select><br>
+            　詳細
+            <select id="job-detail3" name="job-detail3">
+                <option value="">選択してください</option>
+                <optgroup label="オフィスワーク・事務">
+                    <option value="admin-general">一般事務</option>
+                    <option value="admin-business">営業事務</option>
+                    <option value="admin-trading">貿易事務</option>
+                    <option value="admin-english">英文事務</option>
+                    <option value="admin-finance">金融事務</option>
+                    <option value="admin-accounting">経理事務</option>
+                    <option value="admin-medical">医療事務・受付</option>
+                    <option value="admin-legal">法務・特許事務</option>
+                    <option value="admin-school">学校事務</option>
+                    <option value="admin-datainput">データ入力</option>
+                    <option value="admin-socalinsurance">社会保険事務</option>
+                    <option value="admin-realestate">不動産事務</option>
+                    <option value="accounting">経理・財務・会計</option>
+                    <option value="general-affairs">総務・人事・法務</option>
+                    <option value="secretary">秘書</option>
+                    <option value="reception">受付</option>
+                    <option value="translate">翻訳・通訳</option>
+                    <option value="admin-nursing">介護事務</option>
+                    <option value="admin-etc">その他（オフィスワーク・事務）</option>
+                </optgroup>
+                <optgroup label="営業・販売・サービス">
+                    <option value="business">営業</option>
+                    <option value="business-route">営業（ルート）</option>
+                    <option value="callcenter-receive">コールセンター（受信）</option>
+                    <option value="callcenter-send">コールセンター（発信）</option>
+                    <option value="sales-homeappliance">接客販売（家電・携帯）</option>
+                    <option value="sales-eatdrink">接客販売（飲食）</option>
+                    <option value="sales-apparel">接客販売（アパレル・コスメ）</option>
+                    <option value="aesthetician">エステティシャン</option>
+                    <option value="sales-etc">その他（営業・販売・サービス）</option>
+                </optgroup>
+                <optgroup label="IT・エンジニア">
+                    <option value="system-engineer">SE</option>
+                    <option value="cad-operator-manufacturer">CADオペレータ（機械）</option>
+                    <option value="cad-operator-architecture">CADオペレータ（建築）</option>
+                    <option value="programmer">プログラマー</option>
+                    <option value="helpdesk">ヘルプデスク・ユーザーサポート</option>
+                    <option value="it-engineer-etc">その他（IT・エンジニア）</option>
+                </optgroup>
+                <optgroup label="クリエイティブ">
+                    <option value="web-designer">Webデザイナー</option>
+                    <option value="dtp-operator">DTPオペレータ</option>
+                    <option value="creative-etc">その他（クリエイティブ）</option>
+                </optgroup>
+                <optgroup label="介護・福祉・医療・教育">
+                    <option value="nurse">看護師</option>
+                    <option value="helper">ヘルパー・介護士</option>
+                    <option value="nursery-teacher">保育士</option>
+                    <option value="nutritionist">栄養士</option>
+                    <option value="instructor">講師・インストラクター</option>
+                    <option value="nursing-etc">その他（介護・福祉・医療・教育）</option>
+                </optgroup>
+                <optgroup label="製造・物流・軽作業">
+                    <option value="manufacturing">製造</option>
+                    <option value="logistics">物流</option>
+                    <option value="production-management">生産管理</option>
+                    <option value="light-work">軽作業・仕分け作業</option>
+                    <option value="driver">運転手・配達・配送</option>
+                    <option value="manufacturer-etc">その他（製造・物流・軽作業）</option>
+                </optgroup>
+                <optgroup label="専門職">
+                    <option value="research">研究</option>
+                    <option value="development">開発</option>
+                    <option value="manufacturer">実験</option>
+                    <option value="experiment">その他（専門職）</option>
+                </optgroup>
+                <optgroup label="その他">
+                    <option value="etc">その他</option>
+                </optgroup>
+            </select><br>
+            雇用形態
+            <select id="employ-status3" name="employ-status3">
+                <option value="">選択してください</option>
+                <option value="regular-employee">正社員</option>
+                <option value="part-time">パート・アルバイト</option>
+                <option value="trading">派遣社員</option>
+                <option value="temporary-employee">契約社員</option>
+                <option value="seasonal-worker">臨時・季節</option>
+                <option value="self-employed">自営業</option>
+                <option value="outsourcing">業務委託</option>
+                <option value="appointment-dispatch">紹介予定派遣</option>
+                <option value="etc">その他</option>
+            </select><br><br>
+            業務内容
+            <input type="text" name="work-detail3" size="60"><br><br>
+            ------------------------------------------------------------------------<br>
+            期間
+            <input type="time" name="work-start4">
+            ～
+            <input type="time" name="work-end4"><br><br>
+            会社名
+            <input type="text" name="company-name4" size="60"><br><br>
+            業種　
+            <select id="industry4" name="industry4">
+                <option value="">選択してください</option>
+                <option value="it-Web">IT・Web関連</option>
+                <option value="accounting">会計・法律関連</option>
+                <option value="trading">商社関連</option>
+                <option value="manufacturer">メーカー関連</option>
+                <option value="logistics">物流関連</option>
+                <option value="retail">小売・卸売関連</option>
+                <option value="food">食品関連</option>
+                <option value="service">サービス関連</option>
+                <option value="leisure">レジャー・アミューズメント関連</option>
+                <option value="hotel">ホテル関連</option>
+                <option value="nursing">介護・福祉・医療・教育関連</option>
+                <option value="mass-communication">マスコミ関連</option>
+                <option value="logistics">人材関連</option>
+                <option value="real-estate">不動産・建設関連</option>
+                <option value="apparel">アパレル・コスメ関連</option>
+                <option value="finance">金融関連</option>
+                <option value="public-sector">公的機関関連</option>
+                <option value="etc">その他</option>
+            </select><br>
+            職種　区分
+            <select id="job4" name="job4">
+                <option value="">選択してください</option>
+                <option value="admin">オフィスワーク・事務</option>
+                <option value="business">営業・販売・サービス</option>
+                <option value="it-engineer">IT・エンジニア</option>
+                <option value="creative">クリエイティブ</option>
+                <option value="nursing">介護・福祉・医療・教育</option>
+                <option value="manufacturer">製造・物流・軽作業</option>
+                <option value="specialist">専門職</option>
+                <option value="etc">その他</option>
+            </select><br>
+            　詳細
+            <select id="job-detail4" name="job-detail4">
+                <option value="">選択してください</option>
+                <optgroup label="オフィスワーク・事務">
+                    <option value="admin-general">一般事務</option>
+                    <option value="admin-business">営業事務</option>
+                    <option value="admin-trading">貿易事務</option>
+                    <option value="admin-english">英文事務</option>
+                    <option value="admin-finance">金融事務</option>
+                    <option value="admin-accounting">経理事務</option>
+                    <option value="admin-medical">医療事務・受付</option>
+                    <option value="admin-legal">法務・特許事務</option>
+                    <option value="admin-school">学校事務</option>
+                    <option value="admin-datainput">データ入力</option>
+                    <option value="admin-socalinsurance">社会保険事務</option>
+                    <option value="admin-realestate">不動産事務</option>
+                    <option value="accounting">経理・財務・会計</option>
+                    <option value="general-affairs">総務・人事・法務</option>
+                    <option value="secretary">秘書</option>
+                    <option value="reception">受付</option>
+                    <option value="translate">翻訳・通訳</option>
+                    <option value="admin-nursing">介護事務</option>
+                    <option value="admin-etc">その他（オフィスワーク・事務）</option>
+                </optgroup>
+                <optgroup label="営業・販売・サービス">
+                    <option value="business">営業</option>
+                    <option value="business-route">営業（ルート）</option>
+                    <option value="callcenter-receive">コールセンター（受信）</option>
+                    <option value="callcenter-send">コールセンター（発信）</option>
+                    <option value="sales-homeappliance">接客販売（家電・携帯）</option>
+                    <option value="sales-eatdrink">接客販売（飲食）</option>
+                    <option value="sales-apparel">接客販売（アパレル・コスメ）</option>
+                    <option value="aesthetician">エステティシャン</option>
+                    <option value="sales-etc">その他（営業・販売・サービス）</option>
+                </optgroup>
+                <optgroup label="IT・エンジニア">
+                    <option value="system-engineer">SE</option>
+                    <option value="cad-operator-manufacturer">CADオペレータ（機械）</option>
+                    <option value="cad-operator-architecture">CADオペレータ（建築）</option>
+                    <option value="programmer">プログラマー</option>
+                    <option value="helpdesk">ヘルプデスク・ユーザーサポート</option>
+                    <option value="it-engineer-etc">その他（IT・エンジニア）</option>
+                </optgroup>
+                <optgroup label="クリエイティブ">
+                    <option value="web-designer">Webデザイナー</option>
+                    <option value="dtp-operator">DTPオペレータ</option>
+                    <option value="creative-etc">その他（クリエイティブ）</option>
+                </optgroup>
+                <optgroup label="介護・福祉・医療・教育">
+                    <option value="nurse">看護師</option>
+                    <option value="helper">ヘルパー・介護士</option>
+                    <option value="nursery-teacher">保育士</option>
+                    <option value="nutritionist">栄養士</option>
+                    <option value="instructor">講師・インストラクター</option>
+                    <option value="nursing-etc">その他（介護・福祉・医療・教育）</option>
+                </optgroup>
+                <optgroup label="製造・物流・軽作業">
+                    <option value="manufacturing">製造</option>
+                    <option value="logistics">物流</option>
+                    <option value="production-management">生産管理</option>
+                    <option value="light-work">軽作業・仕分け作業</option>
+                    <option value="driver">運転手・配達・配送</option>
+                    <option value="manufacturer-etc">その他（製造・物流・軽作業）</option>
+                </optgroup>
+                <optgroup label="専門職">
+                    <option value="research">研究</option>
+                    <option value="development">開発</option>
+                    <option value="manufacturer">実験</option>
+                    <option value="experiment">その他（専門職）</option>
+                </optgroup>
+                <optgroup label="その他">
+                    <option value="etc">その他</option>
+                </optgroup>
+            </select><br>
+            雇用形態
+            <select id="employ-status4" name="employ-status4">
+                <option value="">選択してください</option>
+                <option value="regular-employee">正社員</option>
+                <option value="part-time">パート・アルバイト</option>
+                <option value="trading">派遣社員</option>
+                <option value="temporary-employee">契約社員</option>
+                <option value="seasonal-worker">臨時・季節</option>
+                <option value="self-employed">自営業</option>
+                <option value="outsourcing">業務委託</option>
+                <option value="appointment-dispatch">紹介予定派遣</option>
+                <option value="etc">その他</option>
+            </select><br><br>
+            業務内容
+            <input type="text" name="work-detail4" size="60"><br><br>
+            ------------------------------------------------------------------------<br>
+            期間
+            <input type="time" name="work-start5">
+            ～
+            <input type="time" name="work-end5"><br><br>
+            会社名
+            <input type="text" name="company-name5" size="60"><br><br>
+            業種　
+            <select id="industry5" name="industry5">
+                <option value="">選択してください</option>
+                <option value="it-Web">IT・Web関連</option>
+                <option value="accounting">会計・法律関連</option>
+                <option value="trading">商社関連</option>
+                <option value="manufacturer">メーカー関連</option>
+                <option value="logistics">物流関連</option>
+                <option value="retail">小売・卸売関連</option>
+                <option value="food">食品関連</option>
+                <option value="service">サービス関連</option>
+                <option value="leisure">レジャー・アミューズメント関連</option>
+                <option value="hotel">ホテル関連</option>
+                <option value="nursing">介護・福祉・医療・教育関連</option>
+                <option value="mass-communication">マスコミ関連</option>
+                <option value="logistics">人材関連</option>
+                <option value="real-estate">不動産・建設関連</option>
+                <option value="apparel">アパレル・コスメ関連</option>
+                <option value="finance">金融関連</option>
+                <option value="public-sector">公的機関関連</option>
+                <option value="etc">その他</option>
+            </select><br>
+            職種　区分
+            <select id="job5" name="job5">
+                <option value="">選択してください</option>
+                <option value="admin">オフィスワーク・事務</option>
+                <option value="business">営業・販売・サービス</option>
+                <option value="it-engineer">IT・エンジニア</option>
+                <option value="creative">クリエイティブ</option>
+                <option value="nursing">介護・福祉・医療・教育</option>
+                <option value="manufacturer">製造・物流・軽作業</option>
+                <option value="specialist">専門職</option>
+                <option value="etc">その他</option>
+            </select><br>
+            　詳細
+            <select id="job-detail5" name="job-detail5">
+                <option value="">選択してください</option>
+                <optgroup label="オフィスワーク・事務">
+                    <option value="admin-general">一般事務</option>
+                    <option value="admin-business">営業事務</option>
+                    <option value="admin-trading">貿易事務</option>
+                    <option value="admin-english">英文事務</option>
+                    <option value="admin-finance">金融事務</option>
+                    <option value="admin-accounting">経理事務</option>
+                    <option value="admin-medical">医療事務・受付</option>
+                    <option value="admin-legal">法務・特許事務</option>
+                    <option value="admin-school">学校事務</option>
+                    <option value="admin-datainput">データ入力</option>
+                    <option value="admin-socalinsurance">社会保険事務</option>
+                    <option value="admin-realestate">不動産事務</option>
+                    <option value="accounting">経理・財務・会計</option>
+                    <option value="general-affairs">総務・人事・法務</option>
+                    <option value="secretary">秘書</option>
+                    <option value="reception">受付</option>
+                    <option value="translate">翻訳・通訳</option>
+                    <option value="admin-nursing">介護事務</option>
+                    <option value="admin-etc">その他（オフィスワーク・事務）</option>
+                </optgroup>
+                <optgroup label="営業・販売・サービス">
+                    <option value="business">営業</option>
+                    <option value="business-route">営業（ルート）</option>
+                    <option value="callcenter-receive">コールセンター（受信）</option>
+                    <option value="callcenter-send">コールセンター（発信）</option>
+                    <option value="sales-homeappliance">接客販売（家電・携帯）</option>
+                    <option value="sales-eatdrink">接客販売（飲食）</option>
+                    <option value="sales-apparel">接客販売（アパレル・コスメ）</option>
+                    <option value="aesthetician">エステティシャン</option>
+                    <option value="sales-etc">その他（営業・販売・サービス）</option>
+                </optgroup>
+                <optgroup label="IT・エンジニア">
+                    <option value="system-engineer">SE</option>
+                    <option value="cad-operator-manufacturer">CADオペレータ（機械）</option>
+                    <option value="cad-operator-architecture">CADオペレータ（建築）</option>
+                    <option value="programmer">プログラマー</option>
+                    <option value="helpdesk">ヘルプデスク・ユーザーサポート</option>
+                    <option value="it-engineer-etc">その他（IT・エンジニア）</option>
+                </optgroup>
+                <optgroup label="クリエイティブ">
+                    <option value="web-designer">Webデザイナー</option>
+                    <option value="dtp-operator">DTPオペレータ</option>
+                    <option value="creative-etc">その他（クリエイティブ）</option>
+                </optgroup>
+                <optgroup label="介護・福祉・医療・教育">
+                    <option value="nurse">看護師</option>
+                    <option value="helper">ヘルパー・介護士</option>
+                    <option value="nursery-teacher">保育士</option>
+                    <option value="nutritionist">栄養士</option>
+                    <option value="instructor">講師・インストラクター</option>
+                    <option value="nursing-etc">その他（介護・福祉・医療・教育）</option>
+                </optgroup>
+                <optgroup label="製造・物流・軽作業">
+                    <option value="manufacturing">製造</option>
+                    <option value="logistics">物流</option>
+                    <option value="production-management">生産管理</option>
+                    <option value="light-work">軽作業・仕分け作業</option>
+                    <option value="driver">運転手・配達・配送</option>
+                    <option value="manufacturer-etc">その他（製造・物流・軽作業）</option>
+                </optgroup>
+                <optgroup label="専門職">
+                    <option value="research">研究</option>
+                    <option value="development">開発</option>
+                    <option value="manufacturer">実験</option>
+                    <option value="experiment">その他（専門職）</option>
+                </optgroup>
+                <optgroup label="その他">
+                    <option value="etc">その他</option>
+                </optgroup>
+            </select><br>
+            雇用形態
+            <select id="employ-status5" name="employ-status5">
+                <option value="">選択してください</option>
+                <option value="regular-employee">正社員</option>
+                <option value="part-time">パート・アルバイト</option>
+                <option value="trading">派遣社員</option>
+                <option value="temporary-employee">契約社員</option>
+                <option value="seasonal-worker">臨時・季節</option>
+                <option value="self-employed">自営業</option>
+                <option value="outsourcing">業務委託</option>
+                <option value="appointment-dispatch">紹介予定派遣</option>
+                <option value="etc">その他</option>
+            </select><br><br>
+            業務内容
+            <input type="text" name="work-detail5" size="60"><br><br>
+            <input type="submit" value="保存">
+        </form>
+    </body>
+</html>
