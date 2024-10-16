@@ -160,7 +160,7 @@
                 <option value="etc">その他</option>
             </select><br><br>
             月給
-            <input type="number" name="salary" size="5">
+            <input type="number" required min="0" name="salary" size="5">
             万円以上を希望<br><br>
             勤務地
             <label class="radiobutton">
@@ -304,12 +304,12 @@
                 ほとんど見ていない
             </label><br>
             　利用している媒体
-            <label class="radiobutton">
-                <input type="radio" name="medium" value="hello-work" />
+            <label class="checkbox">
+                <input type="checkbox" name="medium" value="hello-work" />
                 ハローワーク
-                <input type="radio" name="medium" value="town-work" />
+                <input type="checkbox" name="medium" value="town-work" />
                 タウンワーク
-                <input type="radio" name="medium" value="etc" />
+                <input type="checkbox" name="medium" value="etc" />
                 その他
             </label>
             詳細

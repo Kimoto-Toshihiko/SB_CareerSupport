@@ -9,9 +9,9 @@
         <h1>基本情報</h1>
         <form>
             氏名（かな）　
-            <input type="text" name="kana-name" size="20"><br>
+            <input type="text" required name="kana-name" size="20"><br>
             氏名（漢字）　
-            <input type="text" name="name" size="20"><br>
+            <input type="text" required name="name" size="20"><br>
             性別　　　　　
             <label class="radiobutton">
                 <input type="radio" name="gender" value="male" />
@@ -22,13 +22,13 @@
             生年月日　　　
             <input type="date" name="birthday"><br><br>
             郵便番号　　　
-            <input type="text" name="zip" size="10" maxlength="8" onKeyUp="AjaxZip3.zip2addr(this,'','adress','adress');"><br>
+            <input type="text" required name="zip" size="10" maxlength="8" onKeyUp="AjaxZip3.zip2addr(this,'','adress','adress');"><br>
             現住所（漢字）
-            <input type="text" name="adress" size="60"><br>
+            <input type="text" required name="adress" size="60"><br>
             現住所（かな）
-            <input type="text" name="kana-adress" size="60"><br><br>
+            <input type="text" required name="kana-adress" size="60"><br><br>
             携帯電話　　　
-            <input type="tel" name="phone" size="12"><br>
+            <input type="tel"  required name="phone" size="12"><br>
             固定電話　　　
             <input type="tel" name="home-phone" size="12"><br><br>
             緊急連絡先　　<br>
@@ -51,14 +51,14 @@
                 <option value="etc">その他</option>
             </select><br>
             　電話番号　　
-            <input type="tel" name="contact-phone" size="12"><br><br>
+            <input type="tel" required name="contact-phone" size="12"><br><br>
             自宅最寄り駅　<br>
             　路線名（線）
-            <input type="text" name="railway" size="60"><br>
+            <input type="text" required name="railway" size="60"><br>
             　駅名　　　　
-            <input type="text" name="station" size="60"><br><br>
+            <input type="text" required name="station" size="60"><br><br>
             紹介職安名　　
-            <input type="text" name="employ-office" size="60"><br><br>
+            <input type="text" required name="employ-office" size="60"><br><br>
             <input type="submit" value="保存">
         </form>
     </body>
