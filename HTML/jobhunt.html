@@ -164,15 +164,15 @@
             万円以上を希望<br><br>
             勤務地
             <label class="radiobutton">
-                <input type="radio" name="location" value="osaka-city" />
-                大阪市内
-                <input type="radio" name="location" value="osaka-prefecture" />
-                大阪府内
+                <input type="radio" name="location" value="osaka-city" id="lo-osakacity" />
+                <label for="lo-osakacity">大阪市内</label>
+                <input type="radio" name="location" value="osaka-prefecture" id="lo-osakapref" />
+                <label for="lo-osakapref">大阪府内</label>
                 詳細
                 <input type="text" name="location" size="30"><br>
                 　　　
-                <input type="radio" name="location" value="etc-prefecture" />
-                他府県
+                <input type="radio" name="location" value="etc-prefecture" id="lo-etcpref" />
+                <label for="lo-etcpref">他府県</label>
                 詳細
                 <input type="text" name="location" size="30"><br>
             </label>
@@ -187,44 +187,44 @@
             <input type="time" name="working-end"><br><br>
             休日
             <label class="checkbox">
-                <input type="checkbox" name="holiday" value="monday" />
-                月
-                <input type="checkbox" name="holiday" value="tuesday" />
-                火
-                <input type="checkbox" name="holiday" value="wednesday" />
-                水
-                <input type="checkbox" name="holiday" value="thursday" />
-                木
-                <input type="checkbox" name="holiday" value="friday" />
-                金
-                <input type="checkbox" name="holiday" value="saturday" />
-                土
-                <input type="checkbox" name="holiday" value="sunday" />
-                日
-                <input type="checkbox" name="holiday" value="holiday" />
-                祝
-                <input type="checkbox" name="holiday" value="etc" />
-                その他
+                <input type="checkbox" name="holiday" value="monday" id="hol-mon" />
+                <label for="hol-mon">月</label>
+                <input type="checkbox" name="holiday" value="tuesday" id="hol-tue" />
+                <label for="hol-tue">火</label>
+                <input type="checkbox" name="holiday" value="wednesday" id="hol-wed" />
+                <label for="hol-wed">水</label>
+                <input type="checkbox" name="holiday" value="thursday" id="hol-thu" />
+                <label for="hol-thu">木</label>
+                <input type="checkbox" name="holiday" value="friday" id="hol-fri" />
+                <label for="hol-fri">金</label>
+                <input type="checkbox" name="holiday" value="saturday" id="hol-sat" />
+                <label for="hol-sat">土</label>
+                <input type="checkbox" name="holiday" value="sunday" id="hol-sun" />
+                <label for="hol-sun">日</label>
+                <input type="checkbox" name="holiday" value="holiday" id="hol-hol" />
+                <label for="hol-hol">祝</label>
+                <input type="checkbox" name="holiday" value="etc" id="hol-etc" />
+                <label for="hol-etc">その他</label>
                 詳細
                 <input type="text" name="holiday" size="30"><br>
             </label><br>
             子どもの配慮
             <label class="radiobutton">
-                <input type="radio" name="child-consideration" value="no" />
-                不要
-                <input type="radio" name="child-consideration" value="yes" />
-                必要
+                <input type="radio" name="child-consideration" value="no" id="chi-no" />
+                <label for="chi-no">不要</label>
+                <input type="radio" name="child-consideration" value="yes" id="chi-yes" />
+                <label for="chi-yes">必要</label>
                 年齢
                 <input type="text" name="child-consideration" size="30"><br>
             </label><br>
             働き方
             <label class="radiobutton">
-                <input type="radio" name="work-style" value="full-time" />
-                フルタイム
-                <input type="radio" name="work-style" value="within-dependents" />
-                扶養範囲内
-                <input type="radio" name="work-style" value="etc" />
-                その他
+                <input type="radio" name="work-style" value="full-time" id="wor-full" />
+                <label for="wor-full">フルタイム</label>
+                <input type="radio" name="work-style" value="within-dependents" id="wor-within" />
+                <label for="wor-within">扶養範囲内</label>
+                <input type="radio" name="work-style" value="etc" id="wor-etc" />
+                <label for="wor-etc">その他</label>
                 詳細
                 <input type="text" name="work-style" size="30"><br>
             </label><br>
@@ -275,76 +275,76 @@
             </select><br><br>
             就職時期
             <label class="radiobutton">
-                <input type="radio" name="employment-period" value="as-soon-as" />
-                出来るだけ早く
-                <input type="radio" name="employment-period" value="during-training" />
-                訓練期間3ヶ月以内
-                <input type="radio" name="employment-period" value="after-training" />
-                訓練修了後3ヶ月以内
+                <input type="radio" name="employment-period" value="as-soon-as" id="emp-as" />
+                <label for="emp-as">出来るだけ早く</label>
+                <input type="radio" name="employment-period" value="during-training" id="emp-dur" />
+                <label for="emp-dur">訓練期間3ヶ月以内</label>
+                <input type="radio" name="employment-period" value="after-training" id="emp-aft" />
+                <label for="emp-aft">訓練修了後3ヶ月以内</label>
             </label><br>
             　就業開始予定
                 <input type="month" name="employment-period" ><br><br>
             就職活動状況<br>
             　応募書類（職務経歴書）
             <label class="radiobutton">
-                <input type="radio" name="cv" value="completed" />
-                完成済
-                <input type="radio" name="cv" value="in-progress" />
-                作成中
-                <input type="radio" name="cv" value="not-created" />
-                未作成
+                <input type="radio" name="cv" value="completed" id="cv-comp" />
+                <label for="cv-comp">完成済</label>
+                <input type="radio" name="cv" value="in-progress" id="cv-inp" />
+                <label for="cv-inp">作成中</label>
+                <input type="radio" name="cv" value="not-created" id="cv-not" />
+                <label for="cv-not">未作成</label>
             </label><br>
             　求人検索
             <label class="radiobutton">
-                <input type="radio" name="recruit-check" value="every-day" />
-                こまめに行っている(ほぼ毎日)
-                <input type="radio" name="recruit-check" value="sometimes" />
-                たまに(週1～2回程度)
-                <input type="radio" name="recruit-check" value="almost-no" />
-                ほとんど見ていない
+                <input type="radio" name="recruit-check" value="every-day" id="rec-eve" />
+                <label for="rec-eve">こまめに行っている(ほぼ毎日)</label>
+                <input type="radio" name="recruit-check" value="sometimes" id="rec-som" />
+                <label for="rec-som">たまに(週1～2回程度)</label>
+                <input type="radio" name="recruit-check" value="almost-no" id="rec-alm" />
+                <label for="rec-alm">ほとんど見ていない</label>
             </label><br>
             　利用している媒体
             <label class="checkbox">
-                <input type="checkbox" name="medium" value="hello-work" />
-                ハローワーク
-                <input type="checkbox" name="medium" value="town-work" />
-                タウンワーク
-                <input type="checkbox" name="medium" value="etc" />
-                その他
+                <input type="checkbox" name="medium" value="hello-work" id="med-hel" />
+                <label for="med-hel">ハローワーク</label>
+                <input type="checkbox" name="medium" value="town-work" id="med-tow" />
+                <label for="med-tow">タウンワーク</label>
+                <input type="checkbox" name="medium" value="etc" id="med-etc" />
+                <label for="med-etc">その他</label>
             </label>
             詳細
             <input type="text" name="medium" size="60"><br><br>
             直近1ヶ月の応募状況
             <label class="checkbox">
-                <input type="checkbox" name="apply" value="apply" />
+                <input type="checkbox" name="apply" value="apply" id="app-app" />
                 <input type="text" name="apply" size="10">
-                社応募
-                <input type="checkbox" name="documents-pass" value="documents-pass" />
+                <label for="app-app">社応募</label>
+                <input type="checkbox" name="documents-pass" value="documents-pass" id="app-doc" />
                 <input type="text" name="documents-pass" size="10">
-                社書類通過
-                <input type="checkbox" name="interviewed" value="interviewed" />
+                <label for="app-doc">社書類通過</label>
+                <input type="checkbox" name="interviewed" value="interviewed" id="app-int" />
                 <input type="text" name="interviewed" size="10">
-                社面接済
-                <input type="checkbox" name="result-waiting" value="result-waiting" />
+                <label for="app-int">社面接済</label>
+                <input type="checkbox" name="result-waiting" value="result-waiting" id="app-res" />
                 <input type="text" name="result-waiting" size="10">
-                社結果待ち<br>
+                <label for="app-res">社結果待ち</label><br>
                 　　　　　　　　　　　
-                <input type="checkbox" name="none" value="none" />
-                特になし
-                <input type="checkbox" name="etc" value="etc" />
-                その他
+                <input type="checkbox" name="none" value="none" id="app-non" />
+                <label for="app-non">特になし</label>
+                <input type="checkbox" name="etc" value="etc" id="app-etc" />
+                <label for="app-etc">その他</label>
                 詳細
                 <input type="text" name="etc" size="30"><br>
             </label><br>
             人材派遣/紹介会社利用の有無
             <label class="checkbox">
-                <input type="checkbox" name="temp-agency" value="temp-agency" />
-                人材派遣会社
+                <input type="checkbox" name="temp-agency" value="temp-agency" id="temp-temp" />
+                <label for="temp-temp">人材派遣会社</label>
                 利用会社名
                 <input type="text" name="temp-agency" size="30"><br>
                 　　　　　　　　　　　　　　
-                <input type="checkbox" name="employment-agency" value="employment-agency" />
-                人材紹介会社
+                <input type="checkbox" name="employment-agency" value="employment-agency" id="temp-empl" />
+                <label for="temp-empl">人材紹介会社</label>
                 利用会社名
                 <input type="text" name="employment-agency" size="30"><br>
             </label><br>

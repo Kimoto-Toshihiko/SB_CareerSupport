@@ -4,20 +4,23 @@
         <meta charset="utf-8">
         <title>訓練生名簿</title>
         <script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
+        <script src="../js/jquery-3.7.1.min.js"></script>
+        <script src="../JS/garlic.js"></script>
+        <link rel="stylesheet" href="../CSS/style.css">
     </head>
     <body>
         <h1>基本情報</h1>
-        <form>
+        <form data-persist="garlic" method="post">
             氏名（かな）　
             <input type="text" required name="kana-name" size="20"><br>
             氏名（漢字）　
             <input type="text" required name="name" size="20"><br>
             性別　　　　　
             <label class="radiobutton">
-                <input type="radio" name="gender" value="male" />
-                男
-                <input type="radio" name="gender" value="female" />
-                女
+                <input type="radio" name="gender" value="male" id="man" />
+                <label for="man">男</label>
+                <input type="radio" name="gender" value="female" id="woman" />
+                <label for="woman">女</label>
             </label><br>
             生年月日　　　
             <input type="date" name="birthday"><br><br>
@@ -34,10 +37,10 @@
             緊急連絡先　　<br>
             　同居の別　　
             <label class="radiobutton">
-                <input type="radio" name="living-with" value="together" />
-                同居
-                <input type="radio" name="living-with" value="apart" />
-                別居
+                <input type="radio" name="living-with" value="together" id="with" />
+                <label for="with">同居</label>
+                <input type="radio" name="living-with" value="apart" id="separately" />
+                <label for="separately">別居</label>
             </label><br>
             　続柄　　　　
             <select id="relationship" name="relationship">
