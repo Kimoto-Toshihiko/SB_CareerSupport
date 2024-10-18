@@ -17,15 +17,15 @@
             <input type="text" required name="name" size="20"><br>
             性別　　　　　
             <label class="radiobutton">
-                <input type="radio" name="gender" value="male" id="man" />
+                <input type="radio" name="gender" value="male" id="man" required/>
                 <label for="man">男</label>
                 <input type="radio" name="gender" value="female" id="woman" />
                 <label for="woman">女</label>
             </label><br>
             生年月日　　　
-            <input type="date" name="birthday"><br><br>
+            <input type="date" name="birthday" required><br><br>
             郵便番号　　　
-            <input type="text" required name="zip" size="10" maxlength="8" onKeyUp="AjaxZip3.zip2addr(this,'','adress','adress');"><br>
+            <input type="text" required name="zip" size="10" maxlength="8" onKeyUp="AjaxZip3.zip2addr(this,'','adress','adress');" ><br>
             現住所（漢字）
             <input type="text" required name="adress" size="60"><br>
             現住所（かな）
@@ -37,13 +37,13 @@
             緊急連絡先　　<br>
             　同居の別　　
             <label class="radiobutton">
-                <input type="radio" name="living-with" value="together" id="with" />
+                <input type="radio" name="living-with" value="together" id="with" required/>
                 <label for="with">同居</label>
                 <input type="radio" name="living-with" value="apart" id="separately" />
                 <label for="separately">別居</label>
             </label><br>
             　続柄　　　　
-            <select id="relationship" name="relationship">
+            <select id="relationship" name="relationship" required>
                 <option value="">選択してください</option>
                 <option value="father">父</option>
                 <option value="mother">母</option>

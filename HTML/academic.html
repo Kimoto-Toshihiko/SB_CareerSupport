@@ -12,14 +12,14 @@
         <form data-persist="garlic" method="post">
             最終学歴　　<br>
             　年月　　　
-            <input type="month" name="graduation-date"><br>
+            <input type="month" name="graduation-date" required><br>
             　学校名　　
-            <input type="text" name="school-name" size="60"><br>
+            <input type="text" name="school-name" size="60" required><br>
             　学科名　　
-            <input type="text" name="subject-name" size="60"><br>
+            <input type="text" name="subject-name" size="60" required><br>
             　卒業の別　
             <label class="radiobutton">
-                <input type="radio" name="graduation-type" value="dropout" id="quit" />
+                <input type="radio" name="graduation-type" value="dropout" id="quit" required/>
             <label for="quit">中退</label>
                 <input type="radio" name="graduation-type" value="graduation" id="leave" />
                 <label for="leave">卒業</label>
@@ -60,7 +60,7 @@
             　【ビジネス系】<br>
             　　　Illustrator
             <label class="radiobutton">
-                <input type="radio" name="illustrator" value="cannot" id="i-inexperienced" />
+                <input type="radio" name="illustrator" value="cannot" id="i-inexperienced" required/>
                 <label for="i-inexperienced">使用経験なし</label>
                 <input type="radio" name="illustrator" value="can" id="i-experienced" />
                 <label for="i-experienced">経験あり</label>
@@ -69,7 +69,7 @@
                 <input type="text" name="illustrator" size="60"><br>
             　　　Photoshop
             <label class="radiobutton">
-                <input type="radio" name="photoshop" value="cannot" id="p-inexperienced" />
+                <input type="radio" name="photoshop" value="cannot" id="p-inexperienced" required/>
                 <label for="p-inexperienced">使用経験なし</label>
                 <input type="radio" name="photoshop" value="can" id="p-experienced" />
                 <label for="p-experienced">経験あり</label>
@@ -78,7 +78,7 @@
             <input type="text" name="photoshop" size="60"><br>
             　　　会計ソフト
             <label class="radiobutton">
-                <input type="radio" name="accounting" value="cannot" id="a-inexperienced" />
+                <input type="radio" name="accounting" value="cannot" id="a-inexperienced" required/>
                 <label for="a-inexperienced">使用経験なし</label>
                 <input type="radio" name="accounting" value="can" id="a-experienced" />
                 <label for="a-experienced">経験あり</label>
@@ -88,7 +88,7 @@
             自宅のPC環境<br>
             　自宅にPC
             <label class="radiobutton">
-                <input type="radio" name="mypc" value="havenot" id="pc-notowned" />
+                <input type="radio" name="mypc" value="havenot" id="pc-notowned" required/>
                 <label for="pc-notowned">なし</label>
                 <input type="radio" name="mypc" value="have" id="pc-possession" />
                 <label for="pc-possession">あり</label>
@@ -126,7 +126,7 @@
             免許・資格<br>
             　日商簿記検定
             <label class="radiobutton">
-                <input type="radio" name="nissho" value="havenot" id="nis-notowned" />
+                <input type="radio" name="nissho" value="havenot" id="nis-notowned" required/>
                 <label for="nis-notowned">なし</label>
                 <input type="radio" name="nissho" value="have" id="nis-possession" />
                 <label for="nis-possession">あり</label>
@@ -135,7 +135,7 @@
                 級<br>
             　全経簿記検定
             <label class="radiobutton">
-                <input type="radio" name="zenkei" value="havenot" id="kei-notowned" />
+                <input type="radio" name="zenkei" value="havenot" id="kei-notowned" required/>
                 <label for="kei-notowned">なし</label>
                 <input type="radio" name="zenkei" value="have" id="kei-possession" />
                 <label for="kei-possession">あり</label>
@@ -144,7 +144,7 @@
                 級<br>
             　全商簿記検定
             <label class="radiobutton">
-                <input type="radio" name="zensho" value="havenot" id="sho-notowned" />
+                <input type="radio" name="zensho" value="havenot" id="sho-notowned" required/>
                 <label for="sho-notowned">なし</label>
                 <input type="radio" name="zensho" value="have" id="sho-possession" />
                 <label for="sho-possession">あり</label>
@@ -153,7 +153,7 @@
                 級<br>
             　貿易検定　　
             <label class="radiobutton">
-                <input type="radio" name="boueki" value="havenot" id="bou-notowned" />
+                <input type="radio" name="boueki" value="havenot" id="bou-notowned" required/>
                 <label for="bou-notowned">なし</label>
                 <input type="radio" name="boueki" value="have" id="bou-possession" />
                 <label for="bou-possession">あり</label>
@@ -162,14 +162,14 @@
                 級<br><br>
             　宅地建物取引士
             <label class="radiobutton">
-                <input type="radio" name="takken" value="havenot" id="tak-notowned" />
+                <input type="radio" name="takken" value="havenot" id="tak-notowned" required/>
                 <label for="tak-notowned">なし</label>
                 <input type="radio" name="takken" value="have" id="tak-possession" />
                 <label for="tak-possession">あり</label>
             </label><br>
             　自動車免許　　
             <label class="radiobutton">
-                <input type="radio" name="jidousha" value="havenot" id="jid-notowned" />
+                <input type="radio" name="jidousha" value="havenot" id="jid-notowned" required/>
                 <label for="jid-notowned">なし</label>
                 <input type="radio" name="jidousha" value="futsu" id="jid-futsu" />
                 <label for="jid-futsu">普通自動車</label>

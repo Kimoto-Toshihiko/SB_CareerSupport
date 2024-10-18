@@ -11,7 +11,7 @@
         <h1>就職活動等</h1>
         <form data-persist="garlic" method="post">
             業種　
-            <select id="industry" name="industry">
+            <select id="industry" name="industry" required>
                 <option value="">選択してください</option>
                 <option value="it-Web">IT・Web関連</option>
                 <option value="accounting">会計・法律関連</option>
@@ -35,7 +35,7 @@
             　理由
             <input type="text" name="industry-reason" size="60"><br><br>
             職種　
-            <select id="job" name="job">
+            <select id="job" name="job" required>
                 <option value="">選択してください</option>
                 <option value="admin">オフィスワーク・事務</option>
                 <option value="business">営業・販売・サービス</option>
@@ -47,7 +47,7 @@
                 <option value="etc">その他</option>
             </select><br>
             　詳細
-            <select id="job-detail" name="job-detail">
+            <select id="job-detail" name="job-detail" required>
                 <option value="">選択してください</option>
                 <optgroup label="オフィスワーク・事務">
                     <option value="admin-general">一般事務</option>
@@ -124,7 +124,7 @@
             <input type="text" name="job-reason" size="60"><br><br>
             雇用形態<br>
             　第一希望
-            <select id="employ-status1" name="employ-status1">
+            <select id="employ-status1" name="employ-status1" required>
                 <option value="">選択してください</option>
                 <option value="regular-employee">正社員</option>
                 <option value="part-time">パート・アルバイト</option>
@@ -137,7 +137,7 @@
                 <option value="etc">その他</option>
             </select><br>
             　第二希望
-            <select id="employ-status2" name="employ-status2">
+            <select id="employ-status2" name="employ-status2" required>
                 <option value="">選択してください</option>
                 <option value="regular-employee">正社員</option>
                 <option value="part-time">パート・アルバイト</option>
@@ -150,7 +150,7 @@
                 <option value="etc">その他</option>
             </select><br>
             　第三希望
-            <select id="employ-status3" name="employ-status3">
+            <select id="employ-status3" name="employ-status3" required>
                 <option value="">選択してください</option>
                 <option value="regular-employee">正社員</option>
                 <option value="part-time">パート・アルバイト</option>
@@ -167,7 +167,7 @@
             万円以上を希望<br><br>
             勤務地
             <label class="radiobutton">
-                <input type="radio" name="location" value="osaka-city" id="lo-osakacity" />
+                <input type="radio" name="location" value="osaka-city" id="lo-osakacity" required/>
                 <label for="lo-osakacity">大阪市内</label>
                 <input type="radio" name="location" value="osaka-prefecture" id="lo-osakapref" />
                 <label for="lo-osakapref">大阪府内</label>
@@ -180,17 +180,17 @@
                 <input type="text" name="location" size="30"><br>
             </label>
             　沿線・駅名
-            <input type="text" name="along-station" size="60"><br>
+            <input type="text" name="along-station" size="60" required><br>
             　通勤時間　
-            <input type="time" name="commuting-time">
+            <input type="time" name="commuting-time" required>
             以内<br><br>
             勤務時間
-            <input type="time" name="working-start">
+            <input type="time" name="working-start" required>
             ～
-            <input type="time" name="working-end"><br><br>
+            <input type="time" name="working-end" required><br><br>
             休日
             <label class="checkbox">
-                <input type="checkbox" name="holiday" value="monday" id="hol-mon" />
+                <input type="checkbox" name="holiday" value="monday" id="hol-mon" required/>
                 <label for="hol-mon">月</label>
                 <input type="checkbox" name="holiday" value="tuesday" id="hol-tue" />
                 <label for="hol-tue">火</label>
@@ -213,7 +213,7 @@
             </label><br>
             子どもの配慮
             <label class="radiobutton">
-                <input type="radio" name="child-consideration" value="no" id="chi-no" />
+                <input type="radio" name="child-consideration" value="no" id="chi-no" required/>
                 <label for="chi-no">不要</label>
                 <input type="radio" name="child-consideration" value="yes" id="chi-yes" />
                 <label for="chi-yes">必要</label>
@@ -222,7 +222,7 @@
             </label><br>
             働き方
             <label class="radiobutton">
-                <input type="radio" name="work-style" value="full-time" id="wor-full" />
+                <input type="radio" name="work-style" value="full-time" id="wor-full" required/>
                 <label for="wor-full">フルタイム</label>
                 <input type="radio" name="work-style" value="within-dependents" id="wor-within" />
                 <label for="wor-within">扶養範囲内</label>
@@ -235,7 +235,7 @@
             <input type="text" name="hope-etc" size="60"><br><br>
             上記10項目の優先順位<br>
             　第一位
-            <select id="priority1" name="priority1">
+            <select id="priority1" name="priority1" required>
                 <option value="">選択してください</option>
                 <option value="industry">業種</option>
                 <option value="job">職種</option>
@@ -249,7 +249,7 @@
                 <option value="hope-etc">その他希望</option>
             </select><br>
             　第二位
-            <select id="priority2" name="priority2">
+            <select id="priority2" name="priority2" required>
                 <option value="">選択してください</option>
                 <option value="industry">業種</option>
                 <option value="job">職種</option>
@@ -263,7 +263,7 @@
                 <option value="hope-etc">その他希望</option>
             </select><br>
             　第三位
-            <select id="priority3" name="priority3">
+            <select id="priority3" name="priority3" required>
                 <option value="">選択してください</option>
                 <option value="industry">業種</option>
                 <option value="job">職種</option>
@@ -278,7 +278,7 @@
             </select><br><br>
             就職時期
             <label class="radiobutton">
-                <input type="radio" name="employment-period" value="as-soon-as" id="emp-as" />
+                <input type="radio" name="employment-period" value="as-soon-as" id="emp-as" required/>
                 <label for="emp-as">出来るだけ早く</label>
                 <input type="radio" name="employment-period" value="during-training" id="emp-dur" />
                 <label for="emp-dur">訓練期間3ヶ月以内</label>
@@ -286,11 +286,11 @@
                 <label for="emp-aft">訓練修了後3ヶ月以内</label>
             </label><br>
             　就業開始予定
-                <input type="month" name="employment-period" ><br><br>
+                <input type="month" name="employment-period" required><br><br>
             就職活動状況<br>
             　応募書類（職務経歴書）
             <label class="radiobutton">
-                <input type="radio" name="cv" value="completed" id="cv-comp" />
+                <input type="radio" name="cv" value="completed" id="cv-comp" required/>
                 <label for="cv-comp">完成済</label>
                 <input type="radio" name="cv" value="in-progress" id="cv-inp" />
                 <label for="cv-inp">作成中</label>
@@ -299,7 +299,7 @@
             </label><br>
             　求人検索
             <label class="radiobutton">
-                <input type="radio" name="recruit-check" value="every-day" id="rec-eve" />
+                <input type="radio" name="recruit-check" value="every-day" id="rec-eve" required/>
                 <label for="rec-eve">こまめに行っている(ほぼ毎日)</label>
                 <input type="radio" name="recruit-check" value="sometimes" id="rec-som" />
                 <label for="rec-som">たまに(週1～2回程度)</label>
@@ -308,7 +308,7 @@
             </label><br>
             　利用している媒体
             <label class="checkbox">
-                <input type="checkbox" name="medium" value="hello-work" id="med-hel" />
+                <input type="checkbox" name="medium" value="hello-work" id="med-hel" required/>
                 <label for="med-hel">ハローワーク</label>
                 <input type="checkbox" name="medium" value="town-work" id="med-tow" />
                 <label for="med-tow">タウンワーク</label>
@@ -319,22 +319,22 @@
             <input type="text" name="medium" size="60"><br><br>
             直近1ヶ月の応募状況
             <label class="checkbox">
-                <input type="checkbox" name="apply" value="apply" id="app-app" />
+                <input type="checkbox" name="condition" value="apply" id="app-app" required/>
                 <input type="text" name="apply" size="10">
                 <label for="app-app">社応募</label>
-                <input type="checkbox" name="documents-pass" value="documents-pass" id="app-doc" />
+                <input type="checkbox" name="condition" value="documents-pass" id="app-doc" />
                 <input type="text" name="documents-pass" size="10">
                 <label for="app-doc">社書類通過</label>
-                <input type="checkbox" name="interviewed" value="interviewed" id="app-int" />
+                <input type="checkbox" name="condition" value="interviewed" id="app-int" />
                 <input type="text" name="interviewed" size="10">
                 <label for="app-int">社面接済</label>
-                <input type="checkbox" name="result-waiting" value="result-waiting" id="app-res" />
+                <input type="checkbox" name="condition" value="result-waiting" id="app-res" />
                 <input type="text" name="result-waiting" size="10">
                 <label for="app-res">社結果待ち</label><br>
                 　　　　　　　　　　　
-                <input type="checkbox" name="none" value="none" id="app-non" />
+                <input type="checkbox" name="condition" value="none" id="app-non" />
                 <label for="app-non">特になし</label>
-                <input type="checkbox" name="etc" value="etc" id="app-etc" />
+                <input type="checkbox" name="condition" value="etc" id="app-etc" />
                 <label for="app-etc">その他</label>
                 詳細
                 <input type="text" name="etc" size="30"><br>
