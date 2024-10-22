@@ -11,10 +11,10 @@
     <body>
         <h1>基本情報</h1>
         <form data-persist="garlic" method="post">
-            氏名（かな）　
-            <input type="text" required name="kana-name" size="20"><br>
             氏名（漢字）　
             <input type="text" required name="name" size="20"><br>
+            氏名（かな）　
+            <input type="text" required name="kana-name" size="20"><br>
             性別　　　　　
             <label class="radiobutton">
                 <input type="radio" name="gender" value="male" id="man" required/>
@@ -25,7 +25,8 @@
             生年月日　　　
             <input type="date" name="birthday" required><br><br>
             郵便番号　　　
-            <input type="text" required name="zip" size="10" maxlength="8" onKeyUp="AjaxZip3.zip2addr(this,'','adress','adress');" ><br>
+            <input type="text" required name="zip" size="10" maxlength="8" onKeyUp="AjaxZip3.zip2addr(this,'','adress','adress');" >
+            （※半角数字のみ）<br>
             現住所（漢字）
             <input type="text" required name="adress" size="60"><br>
             現住所（かな）

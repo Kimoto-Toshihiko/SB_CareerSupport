@@ -25,7 +25,7 @@
                 <label for="leave">卒業</label>
             </label><br><br>
             パソコンスキル<br>
-            　【Office系】<br>
+            　【Office系】（※できるものに全てチェック）<br>
             　　　Word
             <label class="checkbox">
                 <input type="checkbox" name="word" value="input" id="w-input" />
@@ -93,7 +93,7 @@
                 <input type="radio" name="mypc" value="have" id="pc-possession" />
                 <label for="pc-possession">あり</label>
             </label><br><br>
-            　PCありの場合のみ<br>
+            　PCありの場合のみ（※当てはまるものに全てチェック）<br>
             　　OS
             <label class="checkbox">
                 <input type="checkbox" name="OS" value="windows" id="os-windows" />
@@ -132,7 +132,7 @@
                 <label for="nis-possession">あり</label>
             </label>
                 <input type="text" name="nissho" size="10">
-                級<br>
+                級（お持ちの方は級を記入）<br>
             　全経簿記検定
             <label class="radiobutton">
                 <input type="radio" name="zenkei" value="havenot" id="kei-notowned" required/>
@@ -141,7 +141,7 @@
                 <label for="kei-possession">あり</label>
             </label>
                 <input type="text" name="zenkei" size="10">
-                級<br>
+                級（　　〃　　）<br>
             　全商簿記検定
             <label class="radiobutton">
                 <input type="radio" name="zensho" value="havenot" id="sho-notowned" required/>
@@ -150,7 +150,7 @@
                 <label for="sho-possession">あり</label>
             </label>
                 <input type="text" name="zensho" size="10">
-                級<br>
+                級（　　〃　　）<br>
             　貿易検定　　
             <label class="radiobutton">
                 <input type="radio" name="boueki" value="havenot" id="bou-notowned" required/>
@@ -159,7 +159,7 @@
                 <label for="bou-possession">あり</label>
                 </label>
                 <input type="text" name="boueki" size="10">
-                級<br><br>
+                級（　　〃　　）<br><br>
             　宅地建物取引士
             <label class="radiobutton">
                 <input type="radio" name="takken" value="havenot" id="tak-notowned" required/>
@@ -192,7 +192,7 @@
             取得時期
             <input type="month" name="yotei3-shikaku" value="month" /><br><br>
             趣味・特技
-            <input type="text" name="hobby" size="60"><br><br>
+            <input type="text" name="hobby" required size="60"><br><br>
             <input type="submit" value="保存">
         </form>
     </body>

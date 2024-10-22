@@ -1,0 +1,19 @@
+input {
+    border: 1px solid #333;
+    margin: 0;
+    font-size: 90%;
+    box-sizing: border-box;
+}   
+/* :user-invalid を使用 */
+input:user-invalid, textarea:user-invalid, select:user-invalid {
+    border-color: #900;
+    background-color: #FDD;
+}
+/* :user-invalid を使用 */
+input[type="radio"]:user-invalid, input[type="checkbox"]:user-invalid {
+    box-shadow: 0 0 2px 1px red;
+}
+/* :user-invalid を使用 */
+input[type="radio"]:user-invalid + label, input[type="checkbox"]:user-invalid + label {
+    color: red;
+}
