@@ -14,7 +14,7 @@
             氏名（漢字）　
             <input type="text" required name="name" size="20"><br>
             氏名（かな）　
-            <input type="text" required name="kana-name" size="20"><br>
+            <input type="text" required name="kana-name" size="20" pattern="[\u3042-\u309F\u30FC]+"><br>
             性別　　　　　
             <label class="radiobutton">
                 <input type="radio" name="gender" value="male" id="man" required/>
@@ -25,16 +25,15 @@
             生年月日　　　
             <input type="date" name="birthday" required><br><br>
             郵便番号　　　
-            <input type="text" required name="zip" size="10" maxlength="8" onKeyUp="AjaxZip3.zip2addr(this,'','adress','adress');" >
-            （※半角数字のみ）<br>
+            <input type="text" required name="zip" size="10" maxlength="8" pattern="\d{3}-?\d{4}" onKeyUp="AjaxZip3.zip2addr(this,'','adress','adress');" ><br>
             現住所（漢字）
             <input type="text" required name="adress" size="60"><br>
             現住所（かな）
             <input type="text" required name="kana-adress" size="60"><br><br>
             携帯電話　　　
-            <input type="tel"  required name="phone" size="12"><br>
+            <input type="tel"  required name="phone" size="15" pattern="\d{2,4}-?\d{2,4}-?\d{3,4}"><br>
             固定電話　　　
-            <input type="tel" name="home-phone" size="12"><br><br>
+            <input type="tel" name="home-phone" size="15" pattern="\d{2,4}-?\d{2,4}-?\d{3,4}"><br><br>
             緊急連絡先　　<br>
             　同居の別　　
             <label class="radiobutton">
@@ -55,7 +54,7 @@
                 <option value="etc">その他</option>
             </select><br>
             　電話番号　　
-            <input type="tel" required name="contact-phone" size="12"><br><br>
+            <input type="tel" required name="contact-phone" size="15" pattern="\d{2,4}-?\d{2,4}-?\d{3,4}"><br><br>
             自宅最寄り駅　<br>
             　路線名（線）
             <input type="text" required name="railway" size="60"><br>
