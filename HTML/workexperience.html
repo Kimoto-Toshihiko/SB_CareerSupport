@@ -10,13 +10,13 @@
     <body>
         <h1>職務経歴</h1>
         <form data-persist="garlic" method="post">
-            期間
-            <input type="month" name="work-start1">
-            ～
-            <input type="month" name="work-end1"><br><br>
-            会社名
-            <input type="text" name="company-name1" size="60"><br><br>
-            業種　
+            <label for="work-start1">期間</label>
+            <input type="month" name="work-start1" id="work-start1">
+            <label for="work-end1">～</label>
+            <input type="month" name="work-end1" id="work-end1"><br><br>
+            <label for="company-name1">会社名</label>
+            <input type="text" name="company-name1" size="60" id="company-name1"><br><br>
+            <label for="industry1">業種</label>　
             <select id="industry1" name="industry1">
                 <option value="">選択してください</option>
                 <option value="it-Web">IT・Web関連</option>
@@ -38,7 +38,7 @@
                 <option value="public-sector">公的機関関連</option>
                 <option value="etc">その他</option>
             </select><br>
-            職種　
+            <label for="job1">職種　</label>
             <select id="job1" name="job1">
                 <option value="">選択してください</option>
                 <option value="admin">オフィスワーク・事務</option>
@@ -50,7 +50,7 @@
                 <option value="specialist">専門職</option>
                 <option value="etc">その他</option>
             </select><br>
-            　詳細
+            <label for="job-detail1">　詳細</label>
             <select id="job-detail1" name="job-detail1">
                 <option value="">選択してください</option>
                 <optgroup label="オフィスワーク・事務">
@@ -124,7 +124,7 @@
                     <option value="etc">その他</option>
                 </optgroup>
             </select><br>
-            雇用形態
+            <label for="employ-status1">雇用形態</label>
             <select id="employ-status1" name="employ-status1">
                 <option value="">選択してください</option>
                 <option value="regular-employee">正社員</option>
@@ -137,16 +137,16 @@
                 <option value="appointment-dispatch">紹介予定派遣</option>
                 <option value="etc">その他</option>
             </select><br>
-            <p>業務内容<br>
-                <textarea name="work-detail1" cols="60" rows="10"></textarea></p>
+            <p><label for="work-detail1">業務内容</label><br>
+                <textarea name="work-detail1" cols="60" rows="10" id="work-detail1"></textarea></p>
             ------------------------------------------------------------------------<br>
-            期間
-            <input type="month" name="work-start2">
-            ～
-            <input type="month" name="work-end2"><br><br>
-            会社名
-            <input type="text" name="company-name2" size="60"><br><br>
-            業種　
+            <label for="work-start2">期間</label>
+            <input type="month" name="work-start2" id="work-start2">
+            <label for="work-end2">～</label>
+            <input type="month" name="work-end2" id="work-end2"><br><br>
+            <label for="company-name2">会社名</label>
+            <input type="text" name="company-name2" size="60" id="company-name2"><br><br>
+            <label for="industry2">業種</label>　
             <select id="industry2" name="industry2">
                 <option value="">選択してください</option>
                 <option value="it-Web">IT・Web関連</option>
@@ -168,7 +168,7 @@
                 <option value="public-sector">公的機関関連</option>
                 <option value="etc">その他</option>
             </select><br>
-            職種　
+            <label for="job2">職種　</label>
             <select id="job2" name="job2">
                 <option value="">選択してください</option>
                 <option value="admin">オフィスワーク・事務</option>
@@ -180,7 +180,7 @@
                 <option value="specialist">専門職</option>
                 <option value="etc">その他</option>
             </select><br>
-            　詳細
+            <label for="job-detail2">　詳細</label>
             <select id="job-detail2" name="job-detail2">
                 <option value="">選択してください</option>
                 <optgroup label="オフィスワーク・事務">
@@ -254,7 +254,7 @@
                     <option value="etc">その他</option>
                 </optgroup>
             </select><br>
-            雇用形態
+            <label for="employ-status2">雇用形態</label>
             <select id="employ-status2" name="employ-status2">
                 <option value="">選択してください</option>
                 <option value="regular-employee">正社員</option>
@@ -267,16 +267,16 @@
                 <option value="appointment-dispatch">紹介予定派遣</option>
                 <option value="etc">その他</option>
             </select><br>
-            <p>業務内容<br>
-                <textarea name="work-detail2" cols="60" rows="10"></textarea></p>
+            <p><label for="work-detail2">業務内容</label><br>
+                <textarea name="work-detail2" cols="60" rows="10" id="work-detail2"></textarea></p>
             ------------------------------------------------------------------------<br>
-            期間
-            <input type="month" name="work-start3">
-            ～
-            <input type="month" name="work-end3"><br><br>
-            会社名
-            <input type="text" name="company-name3" size="60"><br><br>
-            業種　
+            <label for="work-start3">期間</label>
+            <input type="month" name="work-start3" id="work-start3">
+            <label for="work-end3">～</label>
+            <input type="month" name="work-end3" id="work-end3"><br><br>
+            <label for="company-name3">会社名</label>
+            <input type="text" name="company-name3" size="60" id="company-name3"><br><br>
+            <label for="industry3">業種</label>　
             <select id="industry3" name="industry3">
                 <option value="">選択してください</option>
                 <option value="it-Web">IT・Web関連</option>
@@ -298,7 +298,7 @@
                 <option value="public-sector">公的機関関連</option>
                 <option value="etc">その他</option>
             </select><br>
-            職種　
+            <label for="job3">職種　</label>
             <select id="job3" name="job3">
                 <option value="">選択してください</option>
                 <option value="admin">オフィスワーク・事務</option>
@@ -310,7 +310,7 @@
                 <option value="specialist">専門職</option>
                 <option value="etc">その他</option>
             </select><br>
-            　詳細
+            <label for="job-detail3">　詳細</label>
             <select id="job-detail3" name="job-detail3">
                 <option value="">選択してください</option>
                 <optgroup label="オフィスワーク・事務">
@@ -384,7 +384,7 @@
                     <option value="etc">その他</option>
                 </optgroup>
             </select><br>
-            雇用形態
+            <label for="employ-status3">雇用形態</label>
             <select id="employ-status3" name="employ-status3">
                 <option value="">選択してください</option>
                 <option value="regular-employee">正社員</option>
@@ -397,16 +397,16 @@
                 <option value="appointment-dispatch">紹介予定派遣</option>
                 <option value="etc">その他</option>
             </select><br>
-            <p>業務内容<br>
-                <textarea name="work-detail3" cols="60" rows="10"></textarea></p>
+            <p><label for="work-detail3">業務内容</label><br>
+                <textarea name="work-detail3" cols="60" rows="10" id="work-detail3"></textarea></p>
             ------------------------------------------------------------------------<br>
-            期間
-            <input type="month" name="work-start4">
-            ～
-            <input type="month" name="work-end4"><br><br>
-            会社名
-            <input type="text" name="company-name4" size="60"><br><br>
-            業種　
+            <label for="work-start4">期間</label>
+            <input type="month" name="work-start4" id="work-start4">
+            <label for="work-end4">～</label>
+            <input type="month" name="work-end4" id="work-end4"><br><br>
+            <label for="company-name4">会社名</label>
+            <input type="text" name="company-name4" size="60" id="company-name4"><br><br>
+            <label for="industry4">業種</label>　
             <select id="industry4" name="industry4">
                 <option value="">選択してください</option>
                 <option value="it-Web">IT・Web関連</option>
@@ -428,7 +428,7 @@
                 <option value="public-sector">公的機関関連</option>
                 <option value="etc">その他</option>
             </select><br>
-            職種　
+            <label for="job4">職種　</label>
             <select id="job4" name="job4">
                 <option value="">選択してください</option>
                 <option value="admin">オフィスワーク・事務</option>
@@ -440,7 +440,7 @@
                 <option value="specialist">専門職</option>
                 <option value="etc">その他</option>
             </select><br>
-            　詳細
+            <label for="job-detail4">　詳細</label>
             <select id="job-detail4" name="job-detail4">
                 <option value="">選択してください</option>
                 <optgroup label="オフィスワーク・事務">
@@ -514,7 +514,7 @@
                     <option value="etc">その他</option>
                 </optgroup>
             </select><br>
-            雇用形態
+            <label for="employ-status4">雇用形態</label>
             <select id="employ-status4" name="employ-status4">
                 <option value="">選択してください</option>
                 <option value="regular-employee">正社員</option>
@@ -527,16 +527,16 @@
                 <option value="appointment-dispatch">紹介予定派遣</option>
                 <option value="etc">その他</option>
             </select><br>
-            <p>業務内容<br>
-                <textarea name="work-detail4" cols="60" rows="10"></textarea></p>
+            <p><label for="work-detail4">業務内容</label><br>
+                <textarea name="work-detail4" cols="60" rows="10" id="work-detail4"></textarea></p>
             ------------------------------------------------------------------------<br>
-            期間
-            <input type="month" name="work-start5">
-            ～
-            <input type="month" name="work-end5"><br><br>
-            会社名
-            <input type="text" name="company-name5" size="60"><br><br>
-            業種　
+            <label for="work-start5">期間</label>
+            <input type="month" name="work-start5" id="work-start5">
+            <label for="work-end5">～</label>
+            <input type="month" name="work-end5" id="work-end5"><br><br>
+            <label for="company-name5">会社名</label>
+            <input type="text" name="company-name5" size="60" id="company-name5"><br><br>
+            <label for="industry5">業種</label>　
             <select id="industry5" name="industry5">
                 <option value="">選択してください</option>
                 <option value="it-Web">IT・Web関連</option>
@@ -558,7 +558,7 @@
                 <option value="public-sector">公的機関関連</option>
                 <option value="etc">その他</option>
             </select><br>
-            職種　
+            <label for="job5">職種　</label>
             <select id="job5" name="job5">
                 <option value="">選択してください</option>
                 <option value="admin">オフィスワーク・事務</option>
@@ -570,7 +570,7 @@
                 <option value="specialist">専門職</option>
                 <option value="etc">その他</option>
             </select><br>
-            　詳細
+            <label for="job-detail5">　詳細</label>
             <select id="job-detail5" name="job-detail5">
                 <option value="">選択してください</option>
                 <optgroup label="オフィスワーク・事務">
@@ -644,7 +644,7 @@
                     <option value="etc">その他</option>
                 </optgroup>
             </select><br>
-            雇用形態
+            <label for="employ-status5">雇用形態</label>
             <select id="employ-status5" name="employ-status5">
                 <option value="">選択してください</option>
                 <option value="regular-employee">正社員</option>
@@ -657,9 +657,10 @@
                 <option value="appointment-dispatch">紹介予定派遣</option>
                 <option value="etc">その他</option>
             </select><br>
-            <p>業務内容<br>
-                <textarea name="work-detail5" cols="60" rows="10"></textarea></p>
-            <input type="submit" value="保存">
-        </form>
+            <p><label for="work-detail5">業務内容</label><br>
+                <textarea name="work-detail5" cols="60" rows="10" id="work-detail5"></textarea></p>
+                <input type="button" onclick="location.href='jobhunt.html'" value="戻る">
+                <input type="button" onclick="location.href='workexperience.html'" value="保存">
+            </form>
     </body>
 </html>

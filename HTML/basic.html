@@ -11,38 +11,38 @@
     <body>
         <h1>基本情報</h1>
         <form data-persist="garlic" method="post">
-            氏名（漢字）　
-            <input type="text" required name="name" size="20"><br>
-            氏名（かな）　
-            <input type="text" required name="kana-name" size="20" pattern="[\u3042-\u309F\u30FC]+"><br>
-            性別　　　　　
+            <label for="name">氏名（漢字）　</label>
+            <input type="text" name="name" size="20" id="name" required><br>
+            <label for="kana-name">氏名（かな）　</label>
+            <input type="text" name="kana-name" size="20" pattern="[\u3042-\u309F\u30FC]+" id="kana-name" required><br>
+            <label for="male">性別　　　　　</label>
             <label class="radiobutton">
-                <input type="radio" name="gender" value="male" id="man" required/>
-                <label for="man">男</label>
-                <input type="radio" name="gender" value="female" id="woman" />
-                <label for="woman">女</label>
+                <input type="radio" name="gender" value="male" id="male" required/>
+                <label for="male">男</label>
+                <input type="radio" name="gender" value="female" id="female" />
+                <label for="female">女</label>
             </label><br>
-            生年月日　　　
-            <input type="date" name="birthday" required><br><br>
-            郵便番号　　　
-            <input type="text" required name="zip" size="10" maxlength="8" pattern="\d{3}-?\d{4}" onKeyUp="AjaxZip3.zip2addr(this,'','adress','adress');" ><br>
-            現住所（漢字）
-            <input type="text" required name="adress" size="60"><br>
-            現住所（かな）
-            <input type="text" required name="kana-adress" size="60"><br><br>
-            携帯電話　　　
-            <input type="tel"  required name="phone" size="15" pattern="\d{2,4}-?\d{2,4}-?\d{3,4}"><br>
-            固定電話　　　
-            <input type="tel" name="home-phone" size="15" pattern="\d{2,4}-?\d{2,4}-?\d{3,4}"><br><br>
+            <label for="birthday">生年月日　　　</label>
+            <input type="date" name="birthday" id="birthday" required><br><br>
+            <label for="zip">郵便番号　　　</label>
+            <input type="text" name="zip" size="10" maxlength="8" pattern="\d{3}-?\d{4}" onKeyUp="AjaxZip3.zip2addr(this,'','adress','adress');" id="zip" required><br>
+            <label for="address">現住所（漢字）</label>
+            <input type="text" name="adress" size="60" id="address" required><br>
+            <label for="kana-address">現住所（かな）</label>
+            <input type="text" name="kana-address" size="60" id="kana-address" required><br><br>
+            <label for="phone">携帯電話　　　</label>
+            <input type="tel" name="phone" size="15" pattern="\d{2,4}-?\d{2,4}-?\d{3,4}" id="phone" required><br>
+            <label for="home-phone">固定電話　　　</label>
+            <input type="tel" name="home-phone" size="15" pattern="\d{2,4}-?\d{2,4}-?\d{3,4}" id="home-phone"><br><br>
             緊急連絡先　　<br>
-            　同居の別　　
+            <label for="together">　同居の別　　</label>
             <label class="radiobutton">
-                <input type="radio" name="living-with" value="together" id="with" required/>
-                <label for="with">同居</label>
-                <input type="radio" name="living-with" value="apart" id="separately" />
-                <label for="separately">別居</label>
+                <input type="radio" name="living-with" value="together" id="together" required/>
+                <label for="together">同居</label>
+                <input type="radio" name="living-with" value="apart" id="apart" />
+                <label for="apart">別居</label>
             </label><br>
-            　続柄　　　　
+            <label for="relationship">　続柄　　　　</label>
             <select id="relationship" name="relationship" required>
                 <option value="">選択してください</option>
                 <option value="father">父</option>
@@ -53,16 +53,16 @@
                 <option value="daughter">娘</option>
                 <option value="etc">その他</option>
             </select><br>
-            　電話番号　　
-            <input type="tel" required name="contact-phone" size="15" pattern="\d{2,4}-?\d{2,4}-?\d{3,4}"><br><br>
+            <label for="contact-phone">　電話番号　　</label>
+            <input type="tel" name="contact-phone" size="15" pattern="\d{2,4}-?\d{2,4}-?\d{3,4}" id="contact-phone" required><br><br>
             自宅最寄り駅　<br>
-            　路線名（線）
-            <input type="text" required name="railway" size="60"><br>
-            　駅名　　　　
-            <input type="text" required name="station" size="60"><br><br>
-            紹介職安名　　
-            <input type="text" required name="employ-office" size="60"><br><br>
-            <input type="submit" value="保存">
+            <label for="route-name">　路線名（線）</label>
+            <input type="text" name="route-name" size="60" id="route-name" required><br>
+            <label for="station-name">　駅名　　　　</label>
+            <input type="text" name="station-name" size="60" id="station-name" required><br><br>
+            <label for="job-security-name">紹介職安名　　</label>
+            <input type="text" name="job-security-name" size="60" id="job-security-name" required><br><br>
+            <input type="button" onclick="location.href='academic.html'" value="保存">
         </form>
     </body>
 </html>
