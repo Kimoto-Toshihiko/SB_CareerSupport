@@ -17,3 +17,15 @@ input[type="radio"]:user-invalid, input[type="checkbox"]:user-invalid {
 input[type="radio"]:user-invalid + label, input[type="checkbox"]:user-invalid + label {
     color: red;
 }
+/* .required クラスは赤文字表示 */
+.required {
+    font-size: 90%;
+    color: white;
+    background-color: red;
+}
+/* .optional クラスは黒文字表示 */
+.optional {
+    font-size: 90%;
+    color: white;
+    background-color: black;
+}
