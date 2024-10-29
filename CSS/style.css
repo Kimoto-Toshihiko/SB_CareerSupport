@@ -1,3 +1,37 @@
+/* ボディー部 */
+body {
+    text-align: left;
+}
+/* ヘッダー部に入力ステップを表示 */
+header {
+    height: 45px;
+}
+/* 入力ステップその１（現在） */
+.now {
+    line-height: 45px;
+    float: left;
+    background-color: black;
+    color: white;
+    border-radius: 12px;
+}
+/* 入力ステップその２（現在以外） */
+.notnow {
+    line-height: 45px;
+    float: left;
+    background-color: lightgrey;
+    color: gray;
+    border-radius: 12px;
+}
+/* 入力ステップその３（＞マーク） */
+.separator {
+    line-height: 45px;
+    float: left;
+}
+/* h2エリア */
+h2 {
+    text-align: left;
+}
+/* 入力エリア */
 input {
     border: 1px solid #333;
     margin: 0;
@@ -22,10 +56,12 @@ input[type="radio"]:user-invalid + label, input[type="checkbox"]:user-invalid + 
     font-size: 90%;
     color: white;
     background-color: red;
+    border-radius: 3px;
 }
 /* .optional クラスは黒文字表示 */
 .optional {
     font-size: 90%;
     color: white;
     background-color: black;
+    border-radius: 3px;
 }

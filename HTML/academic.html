@@ -9,7 +9,17 @@
         <link rel="stylesheet" href="../CSS/style.css">
     </head>
     <body>
-        <h1>最終学歴等</h1>
+        <header>
+            <p class="notnow">(step1)基本情報</p>
+            <p class="separator">　＞　</p>
+            <p class="now">(step2)最終学歴等</p>
+            <p class="separator">　＞　</p>
+            <p class="notnow">(step3)就職活動等</p>
+            <p class="separator">　＞　</p>
+            <p class="notnow">(step4)職務経歴</p>
+        </header>
+        <p>　</p>
+        <h2>最終学歴等</h2>
         <form data-persist="garlic" method="post">
             最終学歴　　<br>
             <label for="graduation-date">　年月　　　</label><label class="required">必須</label>
@@ -53,21 +63,21 @@
             　【ビジネス系】<br>
             <label for="i-inexperienced">　　　Illustrator　</label><label class="required">必須</label>
             <input type="radio" name="illustrator" value="cannot" id="i-inexperienced" onclick="connecttext('i-detail', false);" required/>
-            <label for="i-inexperienced">使用経験なし</label>
+            <label for="i-inexperienced">経験なし</label>
             <input type="radio" name="illustrator" value="can" id="i-experienced" onclick="connecttext('i-detail', true);" />
             <label for="i-experienced">経験あり</label>
             <label for="i-detail">詳細</label>
             <input type="text" name="illustrator" size="60" id="i-detail" disabled><br>
             <label for="p-inexperienced">　　　Photoshop　</label><label class="required">必須</label>
             <input type="radio" name="photoshop" value="cannot" id="p-inexperienced" onclick="connecttext('p-detail', false);" required/>
-            <label for="p-inexperienced">使用経験なし</label>
+            <label for="p-inexperienced">経験なし</label>
             <input type="radio" name="photoshop" value="can" id="p-experienced" onclick="connecttext('p-detail', true);" />
             <label for="p-experienced">経験あり</label>
             <label for="p-detail">詳細</label>
             <input type="text" name="photoshop" size="60" id="p-detail" disabled><br>
             <label for="a-inexperienced">　　　会計ソフト　</label><label class="required">必須</label>
             <input type="radio" name="accounting" value="cannot" id="a-inexperienced" onclick="connecttext('a-detail', false);" required/>
-            <label for="a-inexperienced">使用経験なし</label>
+            <label for="a-inexperienced">経験なし</label>
             <input type="radio" name="accounting" value="can" id="a-experienced" onclick="connecttext('a-detail', true);" />
             <label for="a-experienced">経験あり</label>
             <label for="a-detail">ソフト名</label>

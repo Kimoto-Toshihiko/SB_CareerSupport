@@ -9,7 +9,17 @@
         <link rel="stylesheet" href="../CSS/style.css">
     </head>
     <body>
-        <h1>就職活動等</h1>
+        <header>
+            <p class="notnow">(step1)基本情報</p>
+            <p class="separator">　＞　</p>
+            <p class="notnow">(step2)最終学歴等</p>
+            <p class="separator">　＞　</p>
+            <p class="now">(step3)就職活動等</p>
+            <p class="separator">　＞　</p>
+            <p class="notnow">(step4)職務経歴</p>
+        </header>
+        <p>　</p>
+        <h2>就職活動等</h2>
         <form data-persist="garlic" method="post">
             <label for="industry">業種　　</label><label class="required">必須</label>
             <select id="industry" name="industry" required>
@@ -173,7 +183,7 @@
             <label for="lo-osakapref">大阪府内</label>
             <label for="lo-osakapref-detail">詳細</label>
             <input type="text" name="loc" size="30" id="lo-osakapref-detail" disabled><br>
-            <label>　　　　　　</label>
+            <label>　　　　　　　　　　　　</label>
             <input type="radio" name="loc" value="etc-prefecture" id="lo-etcpref" onclick="connecttext('lo-osakapref-detail', false); connecttext('lo-etcpref-detail', true);" />
             <label for="lo-etcpref">他府県</label>
             <label for="lo-etcpref-detail">詳細</label>
