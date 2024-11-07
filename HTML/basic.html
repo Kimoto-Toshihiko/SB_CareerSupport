@@ -6,25 +6,26 @@
         <script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
         <script src="../js/jquery-3.7.1.js"></script>
         <script src="../JS/garlic.js"></script>
+        <script src="../JS/combotext.js"></script>
         <link rel="stylesheet" href="../CSS/style.css">
     </head>
     <body>
         <header>
-            <p class="now">(step1)基本情報</p>
+            <p class="now">(step1)基本情報①</p>
             <p class="separator">　＞　</p>
-            <p class="notnow">(step2)最終学歴等</p>
+            <p class="notnow">(step2)基本情報②</p>
             <p class="separator">　＞　</p>
             <p class="notnow">(step3)就職活動等</p>
             <p class="separator">　＞　</p>
             <p class="notnow">(step4)職務経歴</p>
         </header>
         <p>　</p>
-        <h2>基本情報</h2>
+        <h2>基本情報①</h2>
         <form data-persist="garlic" method="post">
-            <label for="name">氏名（漢字）　</label><label class="required">必須</label>
+            <label for="name">氏名　　　　　</label><label class="required">必須</label>
             <input type="text" name="name" size="20" id="name" required><br>
-            <label for="kana-name">氏名（かな）　</label><label class="required">必須</label>
-            <input type="text" name="kana-name" size="20" pattern="[\u3042-\u309F\u30FC]+" id="kana-name" required><br>
+            <label for="kana_name">氏名（カナ）　</label><label class="required">必須</label>
+            <input type="text" name="kana_name" size="20" pattern="[\u30A1-\u30FA\u30FC]+" id="kana_name" required><br>
             <label for="male">性別　　　　　</label><label class="required">必須</label>
             <input type="radio" name="gender" value="male" id="male" required/>
             <label for="male">男</label>
@@ -33,23 +34,44 @@
             <label for="birthday">生年月日　　　</label><label class="required">必須</label>
             <input type="date" name="birthday" id="birthday" required><br><br>
             <label for="zip">郵便番号　　　</label><label class="required">必須</label>
-            <input type="text" name="zip" size="10" maxlength="8" pattern="\d{3}-?\d{4}" onKeyUp="AjaxZip3.zip2addr(this,'','adress','adress');" id="zip" required><br>
-            <label for="address">現住所（漢字）</label><label class="required">必須</label>
+            <input type="text" name="zip" size="10" maxlength="8" pattern="\d{3}-?\d{4}" onKeyUp="AjaxZip3.zip2addr(this,'','adress','adress');" id="zip" required>
+            <label>（※ハイフンなし）</label><br>
+            <label for="address">現住所　　　　</label><label class="required">必須</label>
             <input type="text" name="adress" size="60" id="address" required><br>
-            <label for="kana-address">現住所（かな）</label><label class="required">必須</label>
-            <input type="text" name="kana-address" size="60" id="kana-address" required><br><br>
+            <label for="kana_address">現住所（かな）</label><label class="required">必須</label>
+            <input type="text" name="kana_address" size="60" id="kana_address" required><br><br>
             <label for="phone">携帯電話　　　</label><label class="required">必須</label>
             <input type="tel" name="phone" size="15" pattern="\d{2,4}-?\d{2,4}-?\d{3,4}" id="phone" required><br>
-            <label for="home-phone">固定電話　　　</label><label class="optional">任意</label>
-            <input type="tel" name="home-phone" size="15" pattern="\d{2,4}-?\d{2,4}-?\d{3,4}" id="home-phone"><br><br>
+            <label for="home_phone">固定電話　　　</label><label class="optional">任意</label>
+            <input type="tel" name="home_phone" size="15" pattern="\d{2,4}-?\d{2,4}-?\d{3,4}" id="home_phone"><br><br>
+            自宅最寄り駅　<br>
+            <label for="company_name">　鉄道名　　　</label><label class="required">必須</label>
+            <!-- コメント入力の直前にプルダウンメニューを追加 -->
+            <select id="company_name" class="form-control" style="width: 200px;" onchange="toggleCustomInput(this)" required>
+                <option value="">選択してください</option>
+                <option value="JR">JR</option>
+                <option value="Osaka_Metro">Osaka Metro</option>
+                <option value="Kintetsu">近鉄</option>
+                <option value="Keihan">京阪</option>
+                <option value="Hankyu">阪急</option>
+                <option value="Hanshin">阪神</option>
+                <option value="Nankai">南海</option>
+                <option value="etc">その他（手入力）</option>
+            </select>
+            <!-- コメント入力 -->
+            <input type="text" id="comment-company_name" class="form-control" size="30" placeholder="鉄道名を入力してください" disabled><br>
+            <label for="route_name">　路線名　　　</label><label class="required">必須</label>
+            <input type="text" name="route-name" size="58" id="route_name" required>
+            <label>線</label><br>
+            <label for="station_name">　駅名　　　　</label><label class="required">必須</label>
+            <input type="text" name="station_name" size="58" id="station_name" required>
+            <label>駅</label><br><br>
+            <label for="job_security_name">管轄の職安（ハローワーク）名　</label><label class="required">必須</label>
+            <input type="text" name="job_security_name" size="40" id="job_security_name" required><br><br>
             緊急連絡先　　<br>
-            <label for="together">　同居の別　　</label><label class="required">必須</label>
-            <input type="radio" name="living-with" value="together" id="together" required/>
-            <label for="together">同居</label>
-            <input type="radio" name="living-with" value="apart" id="apart" />
-            <label for="apart">別居</label><br>
             <label for="relationship">　続柄　　　　</label><label class="required">必須</label>
-            <select id="relationship" name="relationship" required>
+            <!-- コメント入力の直前にプルダウンメニューを追加 -->
+            <select id="relationship" class="form-control" style="width: 200px;" onchange="toggleCustomInput(this)" required>
                 <option value="">選択してください</option>
                 <option value="father">父</option>
                 <option value="mother">母</option>
@@ -57,17 +79,17 @@
                 <option value="wife">妻</option>
                 <option value="son">息子</option>
                 <option value="daughter">娘</option>
-                <option value="etc">その他</option>
-            </select><br>
-            <label for="contact-phone">　電話番号　　</label><label class="required">必須</label>
-            <input type="tel" name="contact-phone" size="15" pattern="\d{2,4}-?\d{2,4}-?\d{3,4}" id="contact-phone" required><br><br>
-            自宅最寄り駅　<br>
-            <label for="route-name">　路線名（線）</label><label class="required">必須</label>
-            <input type="text" name="route-name" size="60" id="route-name" required><br>
-            <label for="station-name">　駅名　　　　</label><label class="required">必須</label>
-            <input type="text" name="station-name" size="60" id="station-name" required><br><br>
-            <label for="job-security-name">紹介職安名　　</label><label class="required">必須</label>
-            <input type="text" name="job-security-name" size="60" id="job-security-name" required><br><br>
+                <option value="etc">その他（手入力）</option>
+            </select>
+            <!-- コメント入力 -->
+            <input type="text" id="comment-relationship" class="form-control" size="30" placeholder="続柄を入力してください" disabled><br>
+            <label for="contact_phone">　電話番号　　</label><label class="required">必須</label>
+            <input type="tel" name="contact_phone" size="15" pattern="\d{2,4}-?\d{2,4}-?\d{3,4}" id="contact_phone" required><br>
+            <label for="together">　同居の別　　</label><label class="required">必須</label>
+            <input type="radio" name="living-with" value="together" id="together" required/>
+            <label for="together">同居</label>
+            <input type="radio" name="living-with" value="apart" id="apart" />
+            <label for="apart">別居</label><br><br>
             <input type="button" onclick="location.href='basic.html'" value="保存">
             <input type="button" onclick="location.href='academic.html'" value="次へ">
         </form>

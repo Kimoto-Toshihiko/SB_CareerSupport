@@ -5,6 +5,7 @@ body {
 /* ヘッダー部に入力ステップを表示 */
 header {
     height: 45px;
+    background-color: white;
 }
 /* 入力ステップその１（現在） */
 .now {

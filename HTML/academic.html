@@ -10,165 +10,165 @@
     </head>
     <body>
         <header>
-            <p class="notnow">(step1)基本情報</p>
+            <p class="notnow">(step1)基本情報①</p>
             <p class="separator">　＞　</p>
-            <p class="now">(step2)最終学歴等</p>
+            <p class="now">(step2)基本情報②</p>
             <p class="separator">　＞　</p>
             <p class="notnow">(step3)就職活動等</p>
             <p class="separator">　＞　</p>
             <p class="notnow">(step4)職務経歴</p>
         </header>
         <p>　</p>
-        <h2>最終学歴等</h2>
+        <h2>基本情報②</h2>
         <form data-persist="garlic" method="post">
             最終学歴　　<br>
-            <label for="graduation-date">　年月　　　</label><label class="required">必須</label>
-            <input type="month" name="graduation-date" id="graduation-date" required><br>
-            <label for="school-name">　学校名　　</label><label class="required">必須</label>
-            <input type="text" name="school-name" size="60" id="school-name" required><br>
-            <label for="subject-name">　学科名　　</label><label class="required">必須</label>
-            <input type="text" name="subject-name" size="60" id="subject-name" required><br>
+            <label for="graduation_date">　年月　　　</label><label class="required">必須</label>
+            <input type="month" name="graduation_date" id="graduation_date" required><br>
+            <label for="school_name">　学校名　　</label><label class="required">必須</label>
+            <input type="text" name="school_name" size="60" id="school_name" required><br>
+            <label for="subject_name">　学科名　　</label><label class="required">必須</label>
+            <input type="text" name="subject_name" size="60" id="subject_name" required><br>
             <label for="dropout">　卒業の別　</label><label class="required">必須</label>
-            <input type="radio" name="graduation-type" value="dropout" id="dropout" required/>
+            <input type="radio" name="graduation_type" value="dropout" id="dropout" required/>
             <label for="dropout">中退</label>
-            <input type="radio" name="graduation-type" value="graduation" id="graduation" />
+            <input type="radio" name="graduation_type" value="graduation" id="graduation" />
             <label for="graduation">卒業</label><br><br>
             パソコンスキル<br>
             　【Office系】<label class="required">必須</label>（※できるものに全てチェック）<br>
-            <label for="w-input">　　　Word　</label>
-            <input type="checkbox" name="word" value="input" id="w-input" />
-            <label for="w-input">入力</label>
-            <input type="checkbox" name="word" value="style" id="w-style" />
-            <label for="w-style">書式設定</label>
-            <input type="checkbox" name="word" value="picture" id="w-picture" />
-            <label for="w-picture">図の挿入</label>
-            <input type="checkbox" name="word" value="proofread" id="w-proofread" />
-            <label for="w-proofread">校正</label><br>
-            <label for="e-input">　　　Excel　</label>
-            <input type="checkbox" name="excel" value="input" id="e-input" />
-            <label for="e-input">入力</label>
-            <input type="checkbox" name="excel" value="tablecalc" id="e-tablecalc" />
-            <label for="e-tablecalc">表計算</label>
-            <input type="checkbox" name="excel" value="graph" id="e-graph" />
-            <label for="e-graph">グラフ作成</label>
-            <input type="checkbox" name="excel" value="macro" id="e-macro" />
-            <label for="e-macro">マクロ</label><br>
-            <label for="p-slide">　　　PowerPoint　</label>
-            <input type="checkbox" name="ppoint" value="slide" id="p-slide" />
-            <label for="p-slide">スライド作成</label>
-            <input type="checkbox" name="ppoint" value="animation" id="p-animation" />
-            <label for="p-animation">アニメーション</label>
-            <input type="checkbox" name="ppoint" value="presen" id="p-presen" />
-            <label for="p-presen">プレゼン</label><br><br>
+            <label for="w_input">　　　Word　</label>
+            <input type="checkbox" name="word" value="input" id="w_input" />
+            <label for="w_input">入力</label>
+            <input type="checkbox" name="word" value="style" id="w_style" />
+            <label for="w_style">書式設定</label>
+            <input type="checkbox" name="word" value="picture" id="w_picture" />
+            <label for="w_picture">図の挿入</label>
+            <input type="checkbox" name="word" value="proofread" id="w_proofread" />
+            <label for="w_proofread">校正</label><br>
+            <label for="e_input">　　　Excel　</label>
+            <input type="checkbox" name="excel" value="input" id="e_input" />
+            <label for="e_input">入力</label>
+            <input type="checkbox" name="excel" value="tablecalc" id="e_tablecalc" />
+            <label for="e_tablecalc">表計算</label>
+            <input type="checkbox" name="excel" value="graph" id="e_graph" />
+            <label for="e_graph">グラフ作成</label>
+            <input type="checkbox" name="excel" value="macro" id="e_macro" />
+            <label for="e_macro">マクロ</label><br>
+            <label for="p_slide">　　　PowerPoint　</label>
+            <input type="checkbox" name="ppoint" value="slide" id="p_slide" />
+            <label for="p_slide">スライド作成</label>
+            <input type="checkbox" name="ppoint" value="animation" id="p_animation" />
+            <label for="p_animation">アニメーション</label>
+            <input type="checkbox" name="ppoint" value="presen" id="p_presen" />
+            <label for="p_presen">プレゼン</label><br><br>
             　【ビジネス系】<br>
-            <label for="i-inexperienced">　　　Illustrator　</label><label class="required">必須</label>
-            <input type="radio" name="illustrator" value="cannot" id="i-inexperienced" onclick="connecttext('i-detail', false);" required/>
-            <label for="i-inexperienced">経験なし</label>
-            <input type="radio" name="illustrator" value="can" id="i-experienced" onclick="connecttext('i-detail', true);" />
-            <label for="i-experienced">経験あり</label>
-            <label for="i-detail">詳細</label>
-            <input type="text" name="illustrator" size="60" id="i-detail" disabled><br>
-            <label for="p-inexperienced">　　　Photoshop　</label><label class="required">必須</label>
-            <input type="radio" name="photoshop" value="cannot" id="p-inexperienced" onclick="connecttext('p-detail', false);" required/>
-            <label for="p-inexperienced">経験なし</label>
-            <input type="radio" name="photoshop" value="can" id="p-experienced" onclick="connecttext('p-detail', true);" />
-            <label for="p-experienced">経験あり</label>
-            <label for="p-detail">詳細</label>
-            <input type="text" name="photoshop" size="60" id="p-detail" disabled><br>
-            <label for="a-inexperienced">　　　会計ソフト　</label><label class="required">必須</label>
-            <input type="radio" name="accounting" value="cannot" id="a-inexperienced" onclick="connecttext('a-detail', false);" required/>
-            <label for="a-inexperienced">経験なし</label>
-            <input type="radio" name="accounting" value="can" id="a-experienced" onclick="connecttext('a-detail', true);" />
-            <label for="a-experienced">経験あり</label>
-            <label for="a-detail">ソフト名</label>
-            <input type="text" name="accounting" size="60" id="a-detail" disabled><br><br>
+            <label for="i_inexperienced">　　　Illustrator　</label><label class="required">必須</label>
+            <input type="radio" name="illustrator" value="cannot" id="i_inexperienced" onclick="connecttext('i_detail', false);" required/>
+            <label for="i_inexperienced">経験なし</label>
+            <input type="radio" name="illustrator" value="can" id="i_experienced" onclick="connecttext('i_detail', true);" />
+            <label for="i_experienced">経験あり</label>
+            <label for="i_detail">詳細</label>
+            <input type="text" name="illustrator" size="60" id="i_detail" disabled><br>
+            <label for="p_inexperienced">　　　Photoshop　</label><label class="required">必須</label>
+            <input type="radio" name="photoshop" value="cannot" id="p_inexperienced" onclick="connecttext('p_detail', false);" required/>
+            <label for="p_inexperienced">経験なし</label>
+            <input type="radio" name="photoshop" value="can" id="p_experienced" onclick="connecttext('p_detail', true);" />
+            <label for="p_experienced">経験あり</label>
+            <label for="p_detail">詳細</label>
+            <input type="text" name="photoshop" size="60" id="p_detail" disabled><br>
+            <label for="a_inexperienced">　　　会計ソフト　</label><label class="required">必須</label>
+            <input type="radio" name="accounting" value="cannot" id="a_inexperienced" onclick="connecttext('a_detail', false);" required/>
+            <label for="a_inexperienced">経験なし</label>
+            <input type="radio" name="accounting" value="can" id="a_experienced" onclick="connecttext('a_detail', true);" />
+            <label for="a_experienced">経験あり</label>
+            <label for="a_detail">ソフト名</label>
+            <input type="text" name="accounting" size="60" id="a_detail" disabled><br><br>
             自宅のPC環境<br>
-            <label for="pc-notowned">　自宅にPC　</label><label class="required">必須</label>
-            <input type="radio" name="mypc" value="havenot" id="pc-notowned" required/>
-            <label for="pc-notowned">なし</label>
-            <input type="radio" name="mypc" value="have" id="pc-possession" />
-            <label for="pc-possession">あり</label><br><br>
+            <label for="pc_notowned">　自宅にPC　</label><label class="required">必須</label>
+            <input type="radio" name="mypc" value="havenot" id="pc_notowned" required/>
+            <label for="pc_notowned">なし</label>
+            <input type="radio" name="mypc" value="have" id="pc_possession" />
+            <label for="pc_possession">あり</label><br><br>
             　PCありの場合のみ　<label class="optional">任意</label>（※当てはまるものに全てチェック）<br>
-            <label for="os-windows">　　OS　</label>
-            <input type="checkbox" name="OS" value="windows" id="os-windows" />
-            <label for="os-windows">Windows</label>
-            <input type="checkbox" name="OS" value="mac" id="os-mac" />
-            <label for="os-mac">Mac</label>
-            <input type="checkbox" name="OS" value="false" id="os-etc" onclick="connecttext('os-detail', this.checked);" />
-            <label for="os-etc">その他</label>
-            <label for="os-detail">詳細</label>
-            <input type="text" name="OS" size="60" id="os-detail" disabled /><br>
-            <label for="of-word">　　Office　</label>
-            <input type="checkbox" name="office" value="word" id="of-word" />
-            <label for="of-word">Word</label>
-            <input type="checkbox" name="office" value="excel" id="of-excel" />
-            <label for="of-excel">Excel</label>
-            <input type="checkbox" name="office" value="ppoint" id="of-ppoint" />
-            <label for="of-ppoint">PowerPoint</label>
-            <input type="checkbox" name="office" value="access" id="of-access" />
-            <label for="of-access">Access</label><br>
-            <label for="ad-illustrator">　　Adobe　</label>
-            <input type="checkbox" name="adobe" value="illustrator" id="ad-illustrator" />
-            <label for="ad-illustrator">Illustrator</label>
-            <input type="checkbox" name="adobe" value="photoshop" id="ad-photoshop" />
-            <label for="ad-photoshop">Photoshop</label><br><br>
+            <label for="os_windows">　　OS　</label>
+            <input type="checkbox" name="OS" value="windows" id="os_windows" />
+            <label for="os_windows">Windows</label>
+            <input type="checkbox" name="OS" value="mac" id="os_mac" />
+            <label for="os_mac">Mac</label>
+            <input type="checkbox" name="OS" value="false" id="os-etc" onclick="connecttext('os_detail', this.checked);" />
+            <label for="os_etc">その他</label>
+            <label for="os_detail">詳細</label>
+            <input type="text" name="OS" size="60" id="os_detail" disabled /><br>
+            <label for="of_word">　　Office　</label>
+            <input type="checkbox" name="office" value="word" id="of_word" />
+            <label for="of_word">Word</label>
+            <input type="checkbox" name="office" value="excel" id="of_excel" />
+            <label for="of_excel">Excel</label>
+            <input type="checkbox" name="office" value="ppoint" id="of_ppoint" />
+            <label for="of_ppoint">PowerPoint</label>
+            <input type="checkbox" name="office" value="access" id="of_access" />
+            <label for="of_access">Access</label><br>
+            <label for="ad_illustrator">　　Adobe　</label>
+            <input type="checkbox" name="adobe" value="illustrator" id="ad_illustrator" />
+            <label for="ad_illustrator">Illustrator</label>
+            <input type="checkbox" name="adobe" value="photoshop" id="ad_photoshop" />
+            <label for="ad_photoshop">Photoshop</label><br><br>
             免許・資格<br>
-            <label for="nis-notowned">　日商簿記検定　</label><label class="required">必須</label>
-            <input type="radio" name="nissho" value="havenot" id="nis-notowned" onclick="connecttext('nissho', false);" required/>
-            <label for="nis-notowned">なし</label>
-            <input type="radio" name="nissho" value="have" id="nis-possession" onclick="connecttext('nissho', true);" />
-            <label for="nis-possession">あり</label>
+            <label for="nis_notowned">　日商簿記検定　</label><label class="required">必須</label>
+            <input type="radio" name="nissho" value="havenot" id="nis_notowned" onclick="connecttext('nissho', false);" required/>
+            <label for="nis_notowned">なし</label>
+            <input type="radio" name="nissho" value="have" id="nis_possession" onclick="connecttext('nissho', true);" />
+            <label for="nis_possession">あり</label>
             <input type="text" name="nissho" size="10" id="nissho" disabled>
             <label for="nissho">級（お持ちの方は級を記入）</label><br>
-            <label for="kei-notowned">　全経簿記検定　</label><label class="required">必須</label>
-            <input type="radio" name="zenkei" value="havenot" id="kei-notowned" onclick="connecttext('zenkei', false);" required/>
-            <label for="kei-notowned">なし</label>
-            <input type="radio" name="zenkei" value="have" id="kei-possession" onclick="connecttext('zenkei', true);" />
-            <label for="kei-possession">あり</label>
+            <label for="kei_notowned">　全経簿記検定　</label><label class="required">必須</label>
+            <input type="radio" name="zenkei" value="havenot" id="kei_notowned" onclick="connecttext('zenkei', false);" required/>
+            <label for="kei_notowned">なし</label>
+            <input type="radio" name="zenkei" value="have" id="kei_possession" onclick="connecttext('zenkei', true);" />
+            <label for="kei_possession">あり</label>
             <input type="text" name="zenkei" size="10" id="zenkei" disabled>
             <label for="zenkei">級（　　〃　　）</label><br>
-            <label for="sho-notowned">　全商簿記検定　</label><label class="required">必須</label>
-            <input type="radio" name="zensho" value="havenot" id="sho-notowned" onclick="connecttext('zensho', false);" required/>
-            <label for="sho-notowned">なし</label>
-            <input type="radio" name="zensho" value="have" id="sho-possession"  onclick="connecttext('zensho', true);"/>
-            <label for="sho-possession">あり</label>
+            <label for="sho_notowned">　全商簿記検定　</label><label class="required">必須</label>
+            <input type="radio" name="zensho" value="havenot" id="sho_notowned" onclick="connecttext('zensho', false);" required/>
+            <label for="sho_notowned">なし</label>
+            <input type="radio" name="zensho" value="have" id="sho_possession"  onclick="connecttext('zensho', true);"/>
+            <label for="sho_possession">あり</label>
             <input type="text" name="zensho" size="10" id="zensho" disabled>
             <label for="zensho">級（　　〃　　）</label><br>
-            <label for="bou-notowned">　貿易検定　　　</label><label class="required">必須</label>
+            <label for="bou_notowned">　貿易検定　　　</label><label class="required">必須</label>
             <label class="radiobutton">
-            <input type="radio" name="boueki" value="havenot" id="bou-notowned" onclick="connecttext('boueki', false);" required/>
-            <label for="bou-notowned">なし</label>
-            <input type="radio" name="boueki" value="have" id="bou-possession"  onclick="connecttext('boueki', true);" />
-            <label for="bou-possession">あり</label>
+            <input type="radio" name="boueki" value="havenot" id="bou_notowned" onclick="connecttext('boueki', false);" required/>
+            <label for="bou_notowned">なし</label>
+            <input type="radio" name="boueki" value="have" id="bou_possession"  onclick="connecttext('boueki', true);" />
+            <label for="bou_possession">あり</label>
             <input type="text" name="boueki" size="10" id="boueki" disabled>
             <label for="boueki">級（　　〃　　）</label><br><br>
-            <label for="tak-notowned">　宅地建物取引士　</label><label class="required">必須</label>
-            <input type="radio" name="takken" value="havenot" id="tak-notowned" required/>
-            <label for="tak-notowned">なし</label>
-            <input type="radio" name="takken" value="have" id="tak-possession" />
-            <label for="tak-possession">あり</label><br>
-            <label for="jid-notowned">　自動車免許　　　</label><label class="required">必須</label>
-            <input type="radio" name="jidousha" value="havenot" id="jid-notowned" required/>
-            <label for="jid-notowned">なし</label>
-            <input type="radio" name="jidousha" value="futsu" id="jid-futsu" />
-            <label for="jid-futsu">普通自動車</label>
-            <input type="radio" name="jidousha" value="at" id="jid-at" />
-            <label for="jid-at">AT限定</label><br><br>
-            <label for="sonota-shikaku">　その他所有資格　</label><label class="optional">任意</label>
-            <input type="text" name="sonota-shikaku" size="60" id="sonota-shikaku"><br><br>
+            <label for="tak_notowned">　宅地建物取引士　</label><label class="required">必須</label>
+            <input type="radio" name="takken" value="havenot" id="tak_notowned" required/>
+            <label for="tak_notowned">なし</label>
+            <input type="radio" name="takken" value="have" id="tak_possession" />
+            <label for="tak_possession">あり</label><br>
+            <label for="jid_notowned">　自動車免許　　　</label><label class="required">必須</label>
+            <input type="radio" name="jidousha" value="havenot" id="jid_notowned" required/>
+            <label for="jid_notowned">なし</label>
+            <input type="radio" name="jidousha" value="futsu" id="jid_futsu" />
+            <label for="jid_futsu">普通自動車</label>
+            <input type="radio" name="jidousha" value="at" id="jid_at" />
+            <label for="jid_at">AT限定</label><br><br>
+            <label for="sonota_shikaku">　その他所有資格　</label><label class="optional">任意</label>
+            <input type="text" name="sonota_shikaku" size="60" id="sonota_shikaku"><br><br>
             　取得予定資格<br>
-            <label for="yotei1-shikaku">　　資格名　</label><label class="optional">任意</label>
-            <input type="text" name="yotei1-shikaku" size="30" id="yotei1-shikaku">
-            <label for="yotei1-month">取得時期</label>
-            <input type="month" name="yotei1-shikaku" value="month" id="yotei1-month" /><br>
-            <label for="yotei2-shikaku">　　資格名　</label><label class="optional">任意</label>
-            <input type="text" name="yotei2-shikaku" size="30" id="yotei2-shikaku">
-            <label for="yotei2-month">取得時期</label>
-            <input type="month" name="yotei2-shikaku" value="month" id="yotei2-month"/><br>
-            <label for="yotei3-shikaku">　　資格名　</label><label class="optional">任意</label>
-            <input type="text" name="yotei3-shikaku" size="30" id="yotei3-shikaku">
-            <label for="yotei3-month">取得時期</label>
-            <input type="month" name="yotei3-shikaku" value="month" id="yotei3-month"/><br><br>
+            <label for="yotei1_shikaku">　　資格名　</label><label class="optional">任意</label>
+            <input type="text" name="yotei1_shikaku" size="30" id="yotei1_shikaku">
+            <label for="yotei1_month">取得時期</label>
+            <input type="month" name="yotei1_shikaku" value="month" id="yotei1_month" /><br>
+            <label for="yotei2_shikaku">　　資格名　</label><label class="optional">任意</label>
+            <input type="text" name="yotei2_shikaku" size="30" id="yotei2_shikaku">
+            <label for="yotei2_month">取得時期</label>
+            <input type="month" name="yotei2_shikaku" value="month" id="yotei2_month"/><br>
+            <label for="yotei3_shikaku">　　資格名　</label><label class="optional">任意</label>
+            <input type="text" name="yotei3_shikaku" size="30" id="yotei3_shikaku">
+            <label for="yotei3_month">取得時期</label>
+            <input type="month" name="yotei3_shikaku" value="month" id="yotei3_month"/><br><br>
             <label for="hobby">趣味・特技　</label><label class="required">必須</label>
             <input type="text" name="hobby" size="60" id="hobby" required><br><br>
             <input type="button" onclick="location.href='basic.html'" value="戻る">
